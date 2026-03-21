@@ -1,3 +1,8 @@
+---
+name: craft-spec
+description: Turn messy ideas into a clear, structured PRD. Use when you have rough notes, Slack threads, or half-formed ideas that need to become a product requirements document.
+---
+
 # Spec Writing
 
 **Turn messy ideas into a clear, structured PRD.**

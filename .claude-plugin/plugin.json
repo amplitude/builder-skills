@@ -1,0 +1,11 @@
+{
+  "name": "amplitude-builder-skills",
+  "description": "Battle-tested AI skills for builders — turn messy ideas into specs, design experiments, synthesize research, and draft readouts.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amplitude"
+  },
+  "homepage": "https://github.com/amplitude/amplitude-builder-skills",
+  "repository": "https://github.com/amplitude/amplitude-builder-skills",
+  "license": "MIT"
+}

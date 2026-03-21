@@ -1,3 +1,8 @@
+---
+name: craft-experiment-readout
+description: Summarize experiment results, call a winner, and draft a stakeholder-ready recommendation. Use when an A/B test is complete and you need to communicate results.
+---
+
 # Experiment Readout
 
 **Summarize experiment results, call a winner, and draft a stakeholder-ready recommendation.**

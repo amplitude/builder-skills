@@ -1,3 +1,8 @@
+---
+name: craft-experiment-design
+description: Write a hypothesis, define success metrics, and plan a holdout strategy. Use when designing A/B tests or experiment plans.
+---
+
 # Experiment Design
 
 **Write a hypothesis, define success metrics, and plan a holdout strategy.**

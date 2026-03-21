@@ -1,3 +1,8 @@
+---
+name: craft-discovery-synthesis
+description: Take raw user interview notes or feedback and extract themes and insights. Use when synthesizing qualitative data from interviews, surveys, support tickets, or feedback.
+---
+
 # Discovery Synthesis
 
 **Take raw user interview notes or feedback and extract themes and insights.**
