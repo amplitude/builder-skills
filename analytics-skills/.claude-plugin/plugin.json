@@ -1,6 +1,6 @@
 {
-  "name": "amplitude-builder-skills",
-  "description": "Open-source AI skills for builders — craft specs, design experiments, synthesize research, and analyze product data with Amplitude.",
+  "name": "analytics-skills",
+  "description": "Amplitude-powered analytics skills — analyze dashboards, charts, experiments, feedback, and account health with AI.",
   "version": "1.0.0",
   "author": {
     "name": "Amplitude"
@@ -9,12 +9,13 @@
     "product-management",
     "analytics",
     "amplitude",
-    "prd",
     "experiments",
-    "discovery",
     "dashboards",
+    "charts",
     "feedback",
-    "a-b-testing"
+    "account-health",
+    "a-b-testing",
+    "opportunities"
   ],
   "homepage": "https://github.com/amplitude/amplitude-builder-skills",
   "repository": "https://github.com/amplitude/amplitude-builder-skills",

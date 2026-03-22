@@ -1,20 +1,20 @@
 {
-  "name": "amplitude-builder-skills",
-  "description": "Open-source AI skills for builders — craft specs, design experiments, synthesize research, and analyze product data with Amplitude.",
+  "name": "product-skills",
+  "description": "Product management skills — turn messy ideas into specs, design experiments, synthesize research, and draft readouts.",
   "version": "1.0.0",
   "author": {
     "name": "Amplitude"
   },
   "keywords": [
     "product-management",
-    "analytics",
-    "amplitude",
+    "execution",
     "prd",
+    "spec",
     "experiments",
     "discovery",
-    "dashboards",
-    "feedback",
-    "a-b-testing"
+    "research",
+    "synthesis",
+    "readout"
   ],
   "homepage": "https://github.com/amplitude/amplitude-builder-skills",
   "repository": "https://github.com/amplitude/amplitude-builder-skills",

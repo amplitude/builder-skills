@@ -1,0 +1,18 @@
+{
+  "name": "design-skills",
+  "description": "Design skills — user research, journey mapping, usability analysis, and design critique.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amplitude"
+  },
+  "keywords": [
+    "design",
+    "ux",
+    "user-research",
+    "journey-mapping",
+    "usability"
+  ],
+  "homepage": "https://github.com/amplitude/amplitude-builder-skills",
+  "repository": "https://github.com/amplitude/amplitude-builder-skills",
+  "license": "MIT"
+}
