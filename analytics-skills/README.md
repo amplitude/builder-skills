@@ -15,11 +15,7 @@ Use AI to analyze dashboards, charts, experiments, feedback, and account health 
 | [analyze-feedback](skills/analyze-feedback/SKILL.md) | Synthesize customer feedback into actionable themes and prioritized recommendations |
 | [create-chart](skills/create-chart/SKILL.md) | Create Amplitude charts from natural language descriptions |
 | [create-dashboard](skills/create-dashboard/SKILL.md) | Build comprehensive dashboards from requirements or goals |
-| [daily-brief](skills/daily-brief/SKILL.md) | Get a concise daily briefing of anomalies, trends, risks, and wins |
-| [discover-opportunities](skills/discover-opportunities/SKILL.md) | Discover product opportunities by cross-referencing analytics, experiments, and feedback |
 | [monitor-experiments](skills/monitor-experiments/SKILL.MD) | Monitor all active and recently completed experiments, triage by importance |
-| [weekly-brief](skills/weekly-brief/SKILL.md) | Get a weekly summary of trends, wins, risks, and inflection points |
-| [what-would-lenny-do](skills/what-would-lenny-do/SKILL.md) | Channel Lenny Rachitsky's product wisdom for strategy and growth questions |
 
 ## Commands
 
