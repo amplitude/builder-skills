@@ -1,6 +1,7 @@
 ---
 name: craft-experiment-design
 description: Write a hypothesis, define success metrics, and plan a holdout strategy. Use when designing A/B tests or experiment plans.
+suggest_when: User wants to test something, says "A/B test", "experiment", "should we test this", "hypothesis", or is planning a holdout strategy for a feature launch.
 ---
 
 # Experiment Design

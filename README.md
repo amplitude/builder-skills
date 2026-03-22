@@ -48,10 +48,11 @@ Dashboards, charts, experiments, feedback, and account health — powered by the
 
 ### [execution-skills](execution-skills/) — Stay on top of your product
 
-Daily and weekly briefings to keep you informed.
+Daily briefings, weekly summaries, and idea stress-testing to keep you sharp.
 
 | Type | Name | What it does |
 |------|------|-------------|
+| Skill | [yc-office-hours](execution-skills/yc-office-hours/SKILL.md) | YC-style stress-test of a product idea with forcing questions before committing to build |
 | Skill | [daily-brief](execution-skills/daily-brief/SKILL.md) | Daily briefing of anomalies, trends, risks, and wins |
 | Skill | [weekly-brief](execution-skills/weekly-brief/SKILL.md) | Weekly summary of trends, wins, risks, and inflection points |
 

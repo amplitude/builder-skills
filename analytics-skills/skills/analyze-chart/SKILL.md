@@ -1,6 +1,7 @@
 ---
 name: analyze-chart
 description: Performs deep analysis of a specific Amplitude chart to explain trends, anomalies, and likely drivers. Use when a metric looks unusual, investigating a spike or drop, or understanding the "why" behind numbers.
+suggest_when: User asks "why did this metric move", "explain this chart", shares a chart URL, or wants to investigate a spike, drop, or anomaly in a specific metric.
 ---
 
 # Chart Deep Dive
