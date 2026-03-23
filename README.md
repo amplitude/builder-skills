@@ -25,6 +25,7 @@ Discovery, specs, experiments, readouts, and competitive strategy.
 | Skill | [discover-opportunities](product-skills/skills/discover-opportunities/SKILL.md) | Discover product opportunities via Amplitude analytics, experiments, and feedback |
 | Skill | [jobs-to-be-done](product-skills/skills/jobs-to-be-done/SKILL.md) | Uncover functional, social, and emotional jobs driving customer behavior |
 | Skill | [pre-mortem](product-skills/skills/pre-mortem/SKILL.md) | Imagine launch failure and work backward to identify risks before you ship |
+| Skill | [prioritize](product-skills/skills/prioritize/SKILL.md) | Take a list of ideas or initiatives and quickly rank them using RICE |
 | Skill | [what-would-lenny-do](product-skills/skills/what-would-lenny-do/SKILL.md) | Answer product strategy and growth questions using Lenny Rachitsky's archive |
 | Command | [write-prd](product-skills/commands/write-prd.md) | Guided PRD writing with conversational context gathering |
 | Command | [run-discovery](product-skills/commands/run-discovery.md) | Full discovery workflow from research through experiment design |
@@ -48,13 +49,16 @@ Dashboards, charts, experiments, feedback, and account health — powered by the
 
 ### [execution-skills](execution-skills/) — Stay on top of your product
 
-Daily briefings, weekly summaries, and idea stress-testing to keep you sharp.
+Briefings, meeting processing, stakeholder comms, and idea stress-testing.
 
 | Type | Name | What it does |
 |------|------|-------------|
 | Skill | [yc-office-hours](execution-skills/yc-office-hours/SKILL.md) | YC-style stress-test of a product idea with forcing questions before committing to build |
 | Skill | [daily-brief](execution-skills/daily-brief/SKILL.md) | Daily briefing of anomalies, trends, risks, and wins |
 | Skill | [weekly-brief](execution-skills/weekly-brief/SKILL.md) | Weekly summary of trends, wins, risks, and inflection points |
+| Skill | [meeting-synthesis](execution-skills/meeting-synthesis/SKILL.md) | Turn meeting transcripts or notes into concise takeaways and action items with DRIs |
+| Skill | [stakeholder-update](execution-skills/stakeholder-update/SKILL.md) | Write a weekly stakeholder update — metrics, bets, customer signal, highlights |
+| Skill | [yes-and](execution-skills/yes-and/SKILL.md) | Build on an idea constructively — extend what's working, surface risks with mitigations |
 
 ### [design-skills](design-skills/) — Design & research
 

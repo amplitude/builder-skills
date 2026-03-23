@@ -16,6 +16,7 @@ Each skill is a standalone prompt template. Commands chain skills into guided wo
 | [create-user-stories](skills/create-user-stories/SKILL.md) | Break a PRD into implementable user stories with acceptance criteria |
 | [discover-opportunities](skills/discover-opportunities/SKILL.md) | Discover product opportunities by cross-referencing Amplitude analytics, experiments, and feedback |
 | [pre-mortem](skills/pre-mortem/SKILL.md) | Imagine launch failure and work backward to identify risks before you ship |
+| [prioritize](skills/prioritize/SKILL.md) | Take a list of ideas or initiatives and quickly rank them using RICE or another framework |
 | [what-would-lenny-do](skills/what-would-lenny-do/SKILL.md) | Answer product strategy and growth questions using Lenny Rachitsky's archive |
 
 ## Commands

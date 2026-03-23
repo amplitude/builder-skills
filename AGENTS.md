@@ -22,6 +22,8 @@ jobs-to-be-done         → understand WHY customers need this
   ↓
 discover-opportunities  → find opportunities in Amplitude data
   ↓
+prioritize              → rank opportunities and decide what to do first
+  ↓
 craft-spec              → write the PRD
   ↓
 create-user-stories     → break the spec into sprint-ready stories
@@ -31,6 +33,13 @@ pre-mortem              → identify risks before launch
 craft-experiment-design → design the A/B test
   ↓
 craft-experiment-readout → read out results and recommend ship/kill/iterate
+  ↓
+stakeholder-update      → share progress with the org
+```
+
+Standalone (not part of the lifecycle):
+```
+meeting-synthesis       → process any meeting transcript into takeaways + action items
 ```
 
 Not every project needs every step. Skip steps when the user already has that output.
@@ -50,6 +59,10 @@ Proactively suggest a skill when the user's intent matches — don't wait for th
 - User wants to test something, says "A/B test", "experiment", "should we test this" → **craft-experiment-design**
 - User has experiment results, says "analyze this test", "did it win" → **craft-experiment-readout**
 - User says "what should we build", "find opportunities", "where are we losing users" → **discover-opportunities**
+- User shares a meeting transcript or notes, says "summarize this meeting", "action items" → **meeting-synthesis**
+- User has a list of things and needs to decide, says "prioritize", "rank these", "what should we do first" → **prioritize**
+- User says "write a weekly update", "stakeholder update", "status update for leadership" → **stakeholder-update**
+- User shares a draft or idea and wants feedback, says "what do you think", "make this better", "build on this", "poke holes" → **yes-and**
 - User asks product strategy questions, mentions Lenny Rachitsky → **what-would-lenny-do** (only if lennysdata MCP is connected)
 
 **Analytics-skills triggers:**
