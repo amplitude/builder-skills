@@ -14,7 +14,7 @@ This repo contains AI skills for product managers and builders at Amplitude. Rea
 Skills chain together in a natural product development flow. When a user finishes one step, suggest the next.
 
 ```
-yc-office-hours            → stress-test the idea before committing
+yc-office-hours (command)  → stress-test the idea before committing
   ↓
 craft-discovery-synthesis → synthesize raw research into themes
   ↓
@@ -24,7 +24,9 @@ discover-opportunities  → find opportunities in Amplitude data
   ↓
 prioritize              → rank opportunities and decide what to do first
   ↓
-craft-spec              → write the PRD
+draft-spec              → draft a detailed spec with strategic framing
+  ↓
+craft-spec              → turn messy ideas into a clear, structured PRD
   ↓
 create-user-stories     → break the spec into sprint-ready stories
   ↓
@@ -49,20 +51,16 @@ Not every project needs every step. Skip steps when the user already has that ou
 Proactively suggest a skill when the user's intent matches — don't wait for them to ask by name.
 
 **Product-skills triggers:**
-- User describes a new idea, says "is this worth building", "brainstorm", "stress-test this" → **yc-office-hours**
 - User has raw interview notes, survey responses, feedback → **craft-discovery-synthesis**
 - User asks about customer motivation, "why do they churn", "what do they really want" → **jobs-to-be-done**
 - User asks about competitive advantage, moats, defensibility → **7-powers**
-- User has rough notes and needs a spec, says "write a PRD", "spec this out" → **craft-spec** (or **write-prd** command for guided flow)
+- User has rough notes and needs a spec, says "write a PRD", "spec this out" → **draft-spec** for detailed specs with strategic framing, **craft-spec** for lighter structured PRDs (or **write-prd** command for guided flow)
 - User has a spec and needs stories, says "break this down", "hand off to eng" → **create-user-stories**
 - User is about to launch, says "what could go wrong", "risk assessment" → **pre-mortem**
 - User wants to test something, says "A/B test", "experiment", "should we test this" → **craft-experiment-design**
 - User has experiment results, says "analyze this test", "did it win" → **craft-experiment-readout**
 - User says "what should we build", "find opportunities", "where are we losing users" → **discover-opportunities**
-- User shares a meeting transcript or notes, says "summarize this meeting", "action items" → **meeting-synthesis**
 - User has a list of things and needs to decide, says "prioritize", "rank these", "what should we do first" → **prioritize**
-- User says "write a weekly update", "stakeholder update", "status update for leadership" → **stakeholder-update**
-- User shares a draft or idea and wants feedback, says "what do you think", "make this better", "build on this", "poke holes" → **yes-and**
 - User asks product strategy questions, mentions Lenny Rachitsky → **what-would-lenny-do** (only if lennysdata MCP is connected)
 
 **Analytics-skills triggers:**
@@ -76,10 +74,14 @@ Proactively suggest a skill when the user's intent matches — don't wait for th
 - User asks to check experiments, "what's running" → **monitor-experiments**
 
 **Execution-skills triggers:**
-- User says "morning update", "what happened today" → **daily-brief**
-- User says "weekly update", "what happened this week" → **weekly-brief**
+- User shares a meeting transcript or notes, says "summarize this meeting", "action items" → **meeting-synthesis**
+- User says "write a weekly update", "stakeholder update", "status update for leadership" → **stakeholder-update**
+- User shares a draft or idea and wants feedback, says "what do you think", "make this better", "build on this" → **yes-and**
 
 **Command triggers:**
+- User says "morning update", "what happened today" → **daily-brief** (multi-phase Amplitude briefing)
+- User says "weekly update", "what happened this week" → **weekly-brief** (multi-phase Amplitude summary)
+- User describes a new idea, says "is this worth building", "stress-test this" → **yc-office-hours** (interactive stress-test with branching modes)
 - User wants a full daily check-in → **daily-standup** (chains brief + experiments + feedback)
 - User wants a weekly review → **weekly-review** (chains brief + opportunities + readouts)
 - User wants guided PRD creation → **write-prd** (conversational context gathering → spec)
@@ -91,7 +93,7 @@ Each folder is an independently installable plugin:
 
 - **product-skills/** — Core PM workflow: discovery, specs, experiments, readouts
 - **analytics-skills/** — Amplitude-powered analysis (requires Amplitude MCP server)
-- **execution-skills/** — Daily and weekly briefings
+- **execution-skills/** — Briefings, meeting processing, stakeholder comms, idea stress-testing (requires Amplitude MCP for briefs)
 - **design-skills/** — Coming soon
 - **engineering-skills/** — Coming soon
 - **growth-skills/** — Coming soon

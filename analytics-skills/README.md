@@ -15,7 +15,7 @@ Use AI to analyze dashboards, charts, experiments, feedback, and account health 
 | [analyze-feedback](skills/analyze-feedback/SKILL.md) | Synthesize customer feedback into actionable themes and prioritized recommendations |
 | [create-chart](skills/create-chart/SKILL.md) | Create Amplitude charts from natural language descriptions |
 | [create-dashboard](skills/create-dashboard/SKILL.md) | Build comprehensive dashboards from requirements or goals |
-| [monitor-experiments](skills/monitor-experiments/SKILL.MD) | Monitor all active and recently completed experiments, triage by importance |
+| [monitor-experiments](skills/monitor-experiments/SKILL.md) | Monitor all active and recently completed experiments, triage by importance |
 
 ## Commands
 

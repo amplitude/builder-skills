@@ -15,6 +15,8 @@ Each skill is a standalone prompt template. Commands chain skills into guided wo
 | [craft-discovery-synthesis](skills/craft-discovery-synthesis/SKILL.md) | Extract themes and insights from raw user interviews and feedback |
 | [create-user-stories](skills/create-user-stories/SKILL.md) | Break a PRD into implementable user stories with acceptance criteria |
 | [discover-opportunities](skills/discover-opportunities/SKILL.md) | Discover product opportunities by cross-referencing Amplitude analytics, experiments, and feedback |
+| [draft-spec](skills/draft-spec/SKILL.md) | Draft a detailed spec with problem context, solution design, and strategic framing |
+| [jobs-to-be-done](skills/jobs-to-be-done/SKILL.md) | Uncover functional, social, and emotional jobs driving customer behavior |
 | [pre-mortem](skills/pre-mortem/SKILL.md) | Imagine launch failure and work backward to identify risks before you ship |
 | [prioritize](skills/prioritize/SKILL.md) | Take a list of ideas or initiatives and quickly rank them using RICE or another framework |
 | [what-would-lenny-do](skills/what-would-lenny-do/SKILL.md) | Answer product strategy and growth questions using Lenny Rachitsky's archive |

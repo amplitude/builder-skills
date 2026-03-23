@@ -1,0 +1,20 @@
+{
+  "name": "execution-skills",
+  "description": "Execution skills — briefings, meeting processing, stakeholder comms, and idea stress-testing to keep you sharp.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amplitude"
+  },
+  "keywords": [
+    "execution",
+    "briefings",
+    "meetings",
+    "stakeholder-updates",
+    "daily-brief",
+    "weekly-brief",
+    "stress-testing"
+  ],
+  "homepage": "https://github.com/amplitude/amplitude-builder-skills",
+  "repository": "https://github.com/amplitude/amplitude-builder-skills",
+  "license": "MIT"
+}
