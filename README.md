@@ -76,7 +76,11 @@ Technical design docs, code review, incident analysis, and architecture decision
 
 ### [growth-skills](growth-skills/) — Grow & optimize
 
-Activation analysis, retention strategies, funnel optimization, and go-to-market planning. *Coming soon.*
+Activation analysis, retention strategies, funnel optimization, and go-to-market planning.
+
+| Type | Name | What it does |
+|------|------|-------------|
+| Skill | [build-metric-tree](growth-skills/skills/build-metric-tree/SKILL.md) | Decompose a top-line metric into a sized tree, identify where the real leverage is and where it isn't |
 
 ## Skills vs Commands
 
