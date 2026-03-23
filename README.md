@@ -1,8 +1,8 @@
 # amplitude-builder-skills
 
-**Open-source AI skills for builders — battle-tested at Amplitude.**
+**Open-source agent skills for "builders" — battle-tested for PMs, analysts, engineers, and marketers by the Amplitude team**
 
-Builders spend too much time on the mechanics of writing specs, synthesizing research, analyzing data, and drafting comms — and not enough time on the thinking behind them. These skills give AI the structure and context to handle the mechanical parts, so you can focus on the decisions that matter.
+The best agent skills for product managers, analysts, engineers, marketers, and other AI-enabled "builders" as built or curated by the Amplitude team. Use this as your agent operating system when supercharging your workflows in Claude Code, Claude Cowork, Cursor, OpenAI Codex, and other agent harnesses.
 
 ---
 
@@ -104,4 +104,4 @@ Activation analysis, retention strategies, funnel optimization, and go-to-market
 
 ---
 
-Built by the builder team at [Amplitude](https://amplitude.com).
+Built with ❤️ by the product, engineering, and design teams at [Amplitude](https://amplitude.com).

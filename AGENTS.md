@@ -1,6 +1,6 @@
 # amplitude-builder-skills — Agent Guide
 
-This repo contains AI skills for product managers and builders at Amplitude. Read this file first to understand how the skills work together and when to suggest them.
+The best agent skills for product managers, analysts, engineers, marketers, and other AI-enabled "builders" as built or curated by the Amplitude team. Use this as your agent operating system when supercharging your workflows in Claude Code, Claude Cowork, Cursor, OpenAI Codex, and other agent harnesses.
 
 ## Principles
 
@@ -8,43 +8,6 @@ This repo contains AI skills for product managers and builders at Amplitude. Rea
 2. **Behavior beats interest.** Waitlist signups and "that's interesting" aren't demand. Payment, panic when it breaks, and workflow dependency are. Challenge stated interest with behavioral evidence.
 3. **Completeness over shortcuts.** When AI makes the marginal cost of thoroughness near-zero, always choose the complete version — full acceptance criteria, all edge cases, every open question surfaced.
 4. **Challenge premises before solutions.** The best PM work questions whether the problem is worth solving before designing the solution. Skills should push back on weak thinking, not just format it nicely.
-
-## Skill Lifecycle
-
-Skills chain together in a natural product development flow. When a user finishes one step, suggest the next.
-
-```
-yc-office-hours (command)  → stress-test the idea before committing
-  ↓
-craft-discovery-synthesis → synthesize raw research into themes
-  ↓
-jobs-to-be-done         → understand WHY customers need this
-  ↓
-discover-opportunities  → find opportunities in Amplitude data
-  ↓
-prioritize              → rank opportunities and decide what to do first
-  ↓
-draft-spec              → draft a detailed spec with strategic framing
-  ↓
-craft-spec              → turn messy ideas into a clear, structured PRD
-  ↓
-create-user-stories     → break the spec into sprint-ready stories
-  ↓
-pre-mortem              → identify risks before launch
-  ↓
-craft-experiment-design → design the A/B test
-  ↓
-craft-experiment-readout → read out results and recommend ship/kill/iterate
-  ↓
-stakeholder-update      → share progress with the org
-```
-
-Standalone (not part of the lifecycle):
-```
-meeting-synthesis       → process any meeting transcript into takeaways + action items
-```
-
-Not every project needs every step. Skip steps when the user already has that output.
 
 ## When to Suggest Skills
 
