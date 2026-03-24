@@ -81,6 +81,11 @@ Activation analysis, retention strategies, funnel optimization, and go-to-market
 | Type | Name | What it does |
 |------|------|-------------|
 | Skill | [build-metric-tree](growth-skills/skills/build-metric-tree/SKILL.md) | Decompose a top-line metric into a sized tree, identify where the real leverage is and where it isn't |
+| Skill | [diagnose-activation](growth-skills/skills/diagnose-activation/SKILL.md) | Diagnose where new users fail to activate, identify the aha moment, and build a sized plan to move activation rate |
+| Skill | [diagnose-retention](growth-skills/skills/diagnose-retention/SKILL.md) | Decompose your retention curve into cohorts, identify retention-predictive behaviors, and build a plan to bend the curve |
+| Skill | [diagnose-monetization](growth-skills/skills/diagnose-monetization/SKILL.md) | Find revenue leaks, evaluate packaging and pricing, and size expansion revenue opportunities |
+| Skill | [diagnose-acquisition](growth-skills/skills/diagnose-acquisition/SKILL.md) | Map where users come from, measure channel quality and CAC, and find the highest-leverage acquisition channels |
+| Skill | [map-growth-loops](growth-skills/skills/map-growth-loops/SKILL.md) | Identify and measure self-reinforcing growth loops, find where loops break, and invest in compounding growth |
 
 ## Skills vs Commands
 
