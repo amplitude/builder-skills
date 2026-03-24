@@ -41,6 +41,14 @@ Proactively suggest a skill when the user's intent matches — don't wait for th
 - User says "write a weekly update", "stakeholder update", "status update for leadership" → **stakeholder-update**
 - User shares a draft or idea and wants feedback, says "what do you think", "make this better", "build on this" → **yes-and**
 
+**Growth-skills triggers:**
+- User wants to break down a metric, build a KPI tree, find growth levers → **build-metric-tree**
+- User asks about activation, onboarding drop-off, aha moment, time-to-value, "why aren't new users sticking" → **diagnose-activation**
+- User asks about retention, churn, cohort analysis, habit loops, "why are users leaving", D7/D30 retention → **diagnose-retention**
+- User asks about monetization, pricing, conversion to paid, expansion revenue, ARPU, LTV, packaging → **diagnose-monetization**
+- User asks about acquisition, "where do our users come from", CAC, channel mix, organic vs paid, top of funnel, signup volume, traffic sources → **diagnose-acquisition**
+- User asks about growth loops, flywheel, viral loop, network effects, compounding growth, "how do we grow without just spending more" → **map-growth-loops**
+
 **Command triggers:**
 - User says "morning update", "what happened today" → **daily-brief** (multi-phase Amplitude briefing)
 - User says "weekly update", "what happened this week" → **weekly-brief** (multi-phase Amplitude summary)
@@ -59,6 +67,6 @@ Each folder is an independently installable plugin:
 - **execution-skills/** — Briefings, meeting processing, stakeholder comms, idea stress-testing (requires Amplitude MCP for briefs)
 - **design-skills/** — Coming soon
 - **engineering-skills/** — Coming soon
-- **growth-skills/** — Coming soon
+- **growth-skills/** — Activation, retention, monetization, acquisition diagnosis, metric trees, growth loop mapping
 
 Skills live in `<plugin>/skills/<skill-name>/SKILL.md`. Commands live in `<plugin>/commands/<command-name>.md`. Skills are single-task templates; commands chain multiple skills into guided workflows.
