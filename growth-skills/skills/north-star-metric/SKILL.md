@@ -148,4 +148,3 @@ Be opinionated. A wishy-washy "it depends" answer is worse than a strong recomme
 - [North Star Metric: What It Is & How to Find Yours](https://amplitude.com/blog/product-north-star-metric)
 - [What's a Good or Bad North Star Metric?](https://amplitude.com/blog/good-bad-north-star-metric)
 - [North Star Playbook](https://amplitude.com/books/north-star)
-- [The Three True North Metrics That Your Product and Business Need](https://itamargilad.com/the-three-true-north-metrics-that-your-product-and-business-need/)
