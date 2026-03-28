@@ -49,6 +49,16 @@ Proactively suggest a skill when the user's intent matches — don't wait for th
 - User asks about acquisition, "where do our users come from", CAC, channel mix, organic vs paid, top of funnel, signup volume, traffic sources → **diagnose-acquisition**
 - User asks about growth loops, flywheel, viral loop, network effects, compounding growth, "how do we grow without just spending more" → **map-growth-loops**
 
+**Launch-skills triggers:**
+- User says "we're launching X", "plan the launch", "what's our launch plan", "how should we announce this" → **launch-strategy**
+- User asks to write a launch tweet, announcement thread, social copy, "write the tweet for this" → **launch-tweet**
+- User asks to write a launch email, announcement email, changelog digest, "email our users" → **launch-email**
+- User asks to write a launch blog post, announcement post, technical write-up, "draft the blog post" → **launch-blog-post**
+- User asks to create a demo video, product GIF, visual assets, "make a video for this launch" → **launch-video**
+- User asks to create a landing page, feature page, waitlist page, "I need a landing page" → **launch-landing-page**
+- User asks where to post, how to distribute, "how do we get the word out", "help with Product Hunt" → **launch-distribution**
+- User asks to track a launch, set up UTMs, measure performance, "how do we know if it worked" → **launch-metrics**
+
 **Command triggers:**
 - User says "morning update", "what happened today" → **daily-brief** (multi-phase Amplitude briefing)
 - User says "weekly update", "what happened this week" → **weekly-brief** (multi-phase Amplitude summary)
@@ -67,6 +77,7 @@ Each folder is an independently installable plugin:
 - **execution-skills/** — Briefings, meeting processing, stakeholder comms, idea stress-testing (requires Amplitude MCP for briefs)
 - **design-skills/** — Coming soon
 - **engineering-skills/** — Coming soon
+- **launch-skills/** — Launch planning, messaging, social copy, email, blog posts, video/visuals, landing pages, distribution, and metrics
 - **growth-skills/** — Activation, retention, monetization, acquisition diagnosis, metric trees, growth loop mapping
 
 Skills live in `<plugin>/skills/<skill-name>/SKILL.md`. Commands live in `<plugin>/commands/<command-name>.md`. Skills are single-task templates; commands chain multiple skills into guided workflows.

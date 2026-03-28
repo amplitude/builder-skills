@@ -74,6 +74,21 @@ User research, journey mapping, usability analysis, and design critique. *Coming
 
 Technical design docs, code review, incident analysis, and architecture decisions. *Coming soon.*
 
+### [launch-skills](launch-skills/) — Launch & announce
+
+Plan, message, and execute product launches at any scale — from major products to incremental improvements.
+
+| Type | Name | What it does |
+|------|------|-------------|
+| Skill | [launch-strategy](launch-skills/skills/launch-strategy/SKILL.md) | Plan a launch with tiered framework, messaging brief, checklist, timeline, and retro |
+| Skill | [launch-tweet](launch-skills/skills/launch-tweet/SKILL.md) | Craft launch tweets, threads, and social posts adapted for X, LinkedIn, BlueSky, and HN |
+| Skill | [launch-email](launch-skills/skills/launch-email/SKILL.md) | Write launch emails — subject lines, announcement structure, segmentation, changelog digests |
+| Skill | [launch-blog-post](launch-skills/skills/launch-blog-post/SKILL.md) | Write launch blog posts optimized for SEO and AI engine citation (AEO) |
+| Skill | [launch-video](launch-skills/skills/launch-video/SKILL.md) | Plan and produce demo videos, GIFs, screenshots, and programmatic video with Remotion |
+| Skill | [launch-landing-page](launch-skills/skills/launch-landing-page/SKILL.md) | Design launch landing pages with urgency mechanics, waitlists, and conversion optimization |
+| Skill | [launch-distribution](launch-skills/skills/launch-distribution/SKILL.md) | Execute multi-channel distribution — Twitter, Reddit, LinkedIn, HN, Product Hunt, press |
+| Skill | [launch-metrics](launch-skills/skills/launch-metrics/SKILL.md) | Set up UTMs, define KPIs by tier, run data-driven retros, and build a launch history |
+
 ### [growth-skills](growth-skills/) — Grow & optimize
 
 Activation analysis, retention strategies, funnel optimization, and go-to-market planning.
