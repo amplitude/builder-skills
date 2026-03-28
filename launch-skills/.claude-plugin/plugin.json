@@ -1,0 +1,22 @@
+{
+  "name": "launch-skills",
+  "description": "Launch skills — plan, message, and execute product launches at any scale, from major products to incremental improvements.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amplitude"
+  },
+  "keywords": [
+    "launch",
+    "go-to-market",
+    "product-marketing",
+    "social-media",
+    "landing-pages",
+    "distribution",
+    "blog-posts",
+    "email-marketing",
+    "launch-metrics"
+  ],
+  "homepage": "https://github.com/amplitude/builder-skills",
+  "repository": "https://github.com/amplitude/builder-skills",
+  "license": "MIT"
+}
