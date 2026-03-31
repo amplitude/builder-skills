@@ -32,6 +32,9 @@ Discovery, specs, experiments, readouts, and competitive strategy.
 | Skill | [playing-to-win](product-skills/skills/playing-to-win/SKILL.md) | Develop strategy using the Lafley/Martin cascade — Where to Play, How to Win |
 | Skill | [pre-mortem](product-skills/skills/pre-mortem/SKILL.md) | Imagine launch failure and work backward to identify risks before you ship |
 | Skill | [prioritize](product-skills/skills/prioritize/SKILL.md) | Take a list of ideas or initiatives and quickly rank them using RICE |
+| Skill | [competitor-monitoring](product-skills/skills/competitor-monitoring/SKILL.md) | Visit competitor sites weekly and write a structured competitive intelligence report |
+| Skill | [interview-scheduling](product-skills/skills/interview-scheduling/SKILL.md) | Find top Amplitude users, check calendar availability, and draft personalised Gmail outreach |
+| Skill | [market-research-digest](product-skills/skills/market-research-digest/SKILL.md) | Synthesize Drive files, meeting notes, and web signals into a weekly research summary |
 | Skill | [what-would-lenny-do](product-skills/skills/what-would-lenny-do/SKILL.md) | Answer product strategy and growth questions using Lenny Rachitsky's archive |
 | Command | [write-prd](product-skills/commands/write-prd.md) | Guided PRD writing with conversational context gathering |
 | Command | [run-discovery](product-skills/commands/run-discovery.md) | Full discovery workflow from research through experiment design |
@@ -50,6 +53,8 @@ Dashboards, charts, experiments, feedback, and account health — powered by the
 | Skill | [create-chart](analytics-skills/skills/create-chart/SKILL.md) | Create Amplitude charts from natural language |
 | Skill | [create-dashboard](analytics-skills/skills/create-dashboard/SKILL.md) | Build dashboards from requirements or goals |
 | Skill | [monitor-experiments](analytics-skills/skills/monitor-experiments/SKILL.md) | Monitor all experiments, triage by importance, deep-analyze top ones |
+| Skill | [churn-lost-deal-analysis](analytics-skills/skills/churn-lost-deal-analysis/SKILL.md) | Read CRM loss data, cluster by theme, and surface product gaps with ARR-weighted recommendations |
+| Skill | [support-feedback-prioritization](analytics-skills/skills/support-feedback-prioritization/SKILL.md) | Pull Intercom + Slack signals, enrich with CRM data, and rank by customer value into a tiered report |
 | Command | [daily-standup](analytics-skills/commands/daily-standup.md) | Daily brief + experiment check + feedback scan in one workflow |
 | Command | [weekly-review](analytics-skills/commands/weekly-review.md) | Weekly brief + opportunities + experiment readouts in one workflow |
 
@@ -62,6 +67,9 @@ Briefings, meeting processing, stakeholder comms, and idea stress-testing.
 | Skill | [meeting-synthesis](execution-skills/skills/meeting-synthesis/SKILL.md) | Turn meeting transcripts or notes into concise takeaways and action items with DRIs |
 | Skill | [stakeholder-update](execution-skills/skills/stakeholder-update/SKILL.md) | Write a weekly stakeholder update — metrics, bets, customer signal, highlights |
 | Skill | [yes-and](execution-skills/skills/yes-and/SKILL.md) | Build on an idea constructively — extend what's working, surface risks with mitigations |
+| Skill | [pm-weekly-brief](execution-skills/skills/pm-weekly-brief/SKILL.md) | Read Slack, calendar, and Drive activity from the past 7 days and write a personal PM summary |
+| Skill | [release-notes-generator](execution-skills/skills/release-notes-generator/SKILL.md) | Read completed tickets and write polished, user-facing release notes grouped by product area |
+| Skill | [update-knowledge-base](execution-skills/skills/update-knowledge-base/SKILL.md) | Cross-reference shipped tickets with your help center to detect outdated or missing docs |
 | Command | [daily-brief](execution-skills/commands/daily-brief.md) | Multi-phase daily briefing — gathers Amplitude context, scans for anomalies, trends, risks, and wins |
 | Command | [weekly-brief](execution-skills/commands/weekly-brief.md) | Multi-phase weekly summary — gathers Amplitude context, synthesizes trends, wins, risks, and inflection points |
 | Command | [yc-office-hours](execution-skills/commands/yc-office-hours.md) | Interactive stress-test of a product idea with branching modes and forcing questions before committing to build |
