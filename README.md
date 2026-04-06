@@ -115,17 +115,18 @@ Activation analysis, retention strategies, funnel optimization, and go-to-market
 - **Skills** are standalone prompt templates for a single task. They need your context (notes, data, ideas) and produce creative/analytical output.
 - **Commands** chain multiple skills into guided workflows. They orchestrate the conversation, gather context step by step, and produce a comprehensive deliverable.
 
-## How to Use
+## How to Install
 
-**As a Claude plugin:**
-1. Add this marketplace to your Claude client
-2. Install the plugin(s) you want
-3. Skills and commands appear in your skill selector
+```bash
+git clone https://github.com/amplitude/builder-skills.git
+cd builder-skills
+./install.sh              # install everything
+./install.sh product-skills  # or install one plugin
+```
 
-**As prompt templates:**
-1. Browse a plugin's `skills/` folder and find a skill
-2. Open the `SKILL.md` and copy the prompt template
-3. Paste it into your LLM, fill in the placeholders, and run it
+Skills install into `~/.claude/skills/` and are active globally across all Claude Code sessions. Invoke them naturally or by name (e.g. `/prioritize`, `/craft-spec`).
+
+**Use as prompt templates (no install needed):** open any `SKILL.md`, copy the prompt, paste into your LLM.
 
 ## Contributing
 

@@ -1,23 +1,4 @@
 {
   "name": "analytics-skills",
-  "description": "Amplitude-powered analytics skills — analyze dashboards, charts, experiments, feedback, and account health with AI.",
-  "version": "1.0.0",
-  "author": {
-    "name": "Amplitude"
-  },
-  "keywords": [
-    "product-management",
-    "analytics",
-    "amplitude",
-    "experiments",
-    "dashboards",
-    "charts",
-    "feedback",
-    "account-health",
-    "a-b-testing",
-    "opportunities"
-  ],
-  "homepage": "https://github.com/amplitude/amplitude-builder-skills",
-  "repository": "https://github.com/amplitude/amplitude-builder-skills",
-  "license": "MIT"
+  "description": "Analyze with Amplitude — dashboards, charts, experiments, feedback, account health"
 }

@@ -1,22 +1,4 @@
 {
   "name": "product-skills",
-  "description": "Product management skills — turn messy ideas into specs, design experiments, synthesize research, and draft readouts.",
-  "version": "1.0.0",
-  "author": {
-    "name": "Amplitude"
-  },
-  "keywords": [
-    "product-management",
-    "execution",
-    "prd",
-    "spec",
-    "experiments",
-    "discovery",
-    "research",
-    "synthesis",
-    "readout"
-  ],
-  "homepage": "https://github.com/amplitude/amplitude-builder-skills",
-  "repository": "https://github.com/amplitude/amplitude-builder-skills",
-  "license": "MIT"
+  "description": "Craft & ship products — discovery, specs, experiments, readouts, competitive strategy"
 }
