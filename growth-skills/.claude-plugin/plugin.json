@@ -1,4 +1,19 @@
 {
   "name": "growth-skills",
-  "description": "Grow & optimize — activation, retention, monetization, acquisition, growth loops"
+  "description": "Growth skills — activation analysis, retention strategies, funnel optimization, and go-to-market planning.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amplitude"
+  },
+  "keywords": [
+    "growth",
+    "activation",
+    "retention",
+    "funnels",
+    "go-to-market",
+    "onboarding"
+  ],
+  "homepage": "https://github.com/amplitude/amplitude-builder-skills",
+  "repository": "https://github.com/amplitude/amplitude-builder-skills",
+  "license": "MIT"
 }
