@@ -3,10 +3,6 @@ name: launch-email
 description: Write launch announcement emails and changelog digests for product releases. Use this skill whenever someone asks to write a launch email, draft an announcement email, create a product update email, write a changelog digest, or compose an email to accompany a product launch. Also trigger for "write the email for this launch," "draft the announcement email," "help me email our users about this," or any request to craft email copy tied to a product ship. Covers subject lines, announcement structure, segment-specific emails, changelog digests, and timing relative to social.
 suggest_when: User asks to write a launch email, draft an announcement, create a product update email, write a changelog digest, "write the email for this launch", "draft the announcement email", "email our users about this", or any email copy request tied to a product launch.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Launch Email
 

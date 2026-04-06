@@ -2,10 +2,6 @@
 name: 7-powers-analysis
 description: Analyze a business, product, or feature using Hamilton Helmer's 7 Powers framework to assess competitive advantage and strategic durability. Use when the user asks about competitive moats, strategic positioning, power analysis, defensibility, competitive advantage, or "7 Powers".
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # 7 Powers Competitive Analysis
 

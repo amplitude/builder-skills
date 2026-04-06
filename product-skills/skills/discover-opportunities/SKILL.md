@@ -3,10 +3,6 @@ name: discover-opportunities
 description: >
   Discovers product opportunities by analyzing Amplitude analytics, experiments, session replays, and customer feedback. Synthesizes evidence into prioritized, actionable opportunities with RICE scoring. Use when the user asks to "find opportunities", "what should we build", "where are we losing users", "product gaps", or wants a data-driven backlog of improvements.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Discover Product Opportunities
 

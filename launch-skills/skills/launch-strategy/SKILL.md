@@ -3,10 +3,6 @@ name: launch-strategy
 description: Plan and execute product launches using a tiered framework — from major new products down to small improvements. Use this skill whenever someone asks to plan a launch, create a launch checklist, define launch tiers, write launch messaging, or coordinate a product release. Also trigger when someone says "we're launching X" or "how should we announce this feature" or "what's our launch plan" — even if they don't use the word "strategy." Covers messaging, naming, launch assets, timelines, and post-launch retros. This is the master launch skill; it references the companion skills (launch-tweet, launch-landing-page, launch-distribution, launch-email, launch-video, launch-metrics) for specific execution.
 suggest_when: User asks to plan a launch, create a launch checklist, define launch tiers, write messaging, coordinate a release, "we're launching X", "how should we announce this", "what's our launch plan", "plan the GTM", "launch playbook", or any product release planning request.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Launch Strategy
 

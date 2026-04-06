@@ -3,10 +3,6 @@ name: launch-metrics
 description: Set up measurement and tracking for product launches, run post-launch retros with data, and build a launch analytics system. Use this skill whenever someone asks to track a launch, set up UTM parameters, measure launch performance, run a launch retro, analyze launch results, or build a dashboard for a product release. Also trigger for "how do we know if the launch worked," "what should we track for this launch," "set up UTMs for the announcement," or any request about measuring or evaluating a product launch. Covers pre-launch tracking setup, UTM conventions, per-tier KPIs, benchmark expectations, and retro frameworks.
 suggest_when: User asks to track a launch, set up UTMs, measure launch performance, run a launch retro, analyze launch results, "how do we know if the launch worked", "what should we track", "set up UTMs", or any measurement request tied to a product launch.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Launch Metrics
 

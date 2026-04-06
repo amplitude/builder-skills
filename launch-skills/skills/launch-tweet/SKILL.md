@@ -3,10 +3,6 @@ name: launch-tweet
 description: Craft launch tweets, announcement threads, and social posts for product launches across X/Twitter, LinkedIn, BlueSky, and Threads. Use this skill whenever someone asks to write a launch tweet, draft an announcement thread, create social copy for a product release, or repurpose launch messaging for different platforms. Also trigger for "write the tweet for this launch," "help me announce this on Twitter/X," "draft a LinkedIn post for our new feature," or any request to write social media content tied to a product ship. Handles single tweets, multi-tweet threads, and cross-platform adaptation.
 suggest_when: User asks to write a launch tweet, draft an announcement thread, create social copy, "write the tweet", "help me announce this on Twitter", "draft a LinkedIn post", or any social media content request tied to a product launch.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Launch Tweet
 
