@@ -23,6 +23,8 @@ Here is what I'm working with:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{DESCRIBE YOUR PRODUCT, CURRENT SIGNUP VOLUME, WHAT YOU CURRENTLY CONSIDER "ACTIVATED", ANY DATA ON NEW USER BEHAVIOR — e.g. onboarding completion rates, D1/D7 retention, setup steps, or Amplitude charts}}"
+
 Help me diagnose activation. Follow these steps precisely:
 
 ### Step 1: Define Activation (The Aha Moment)

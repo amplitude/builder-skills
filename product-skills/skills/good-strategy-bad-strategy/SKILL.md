@@ -25,6 +25,11 @@ Here is the context:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE ONE OF THE FOLLOWING:
+- A strategy document, plan, or OKRs you want evaluated
+- A business challenge or competitive situation that needs a strategy
+- A vague strategic direction that needs to be sharpened into a real strategy}}"
+
 ---
 
 **IF the user provided a strategy to evaluate:**

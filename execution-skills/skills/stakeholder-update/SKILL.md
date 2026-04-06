@@ -23,6 +23,8 @@ Here is the raw context for this week's update:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE YOUR METRICS, NOTES, WINS, CUSTOMER QUOTES, TEAM UPDATES, OR ANY RAW CONTEXT HERE}}"
+
 The initiative or pillar name is: {{INITIATIVE NAME}}
 The week is: {{WEEK DATE RANGE}}
 Link to dashboard (if any): {{DASHBOARD URL OR "N/A"}}

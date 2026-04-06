@@ -23,6 +23,12 @@ Here is the context:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE ONE OF THE FOLLOWING:
+- The idea or hypothesis you want to validate through customer conversations
+- Draft interview questions you want to evaluate
+- Raw interview transcripts or notes you want to assess for signal quality
+- A customer segment and the assumptions you need to test}}"
+
 Apply The Mom Test depending on what was provided:
 
 ---

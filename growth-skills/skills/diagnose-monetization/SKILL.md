@@ -23,6 +23,8 @@ Here is what I'm working with:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{DESCRIBE YOUR PRODUCT, PRICING MODEL (FREE/FREEMIUM/TRIAL/PAID TIERS), CURRENT REVENUE METRICS (ARR, ARPU, CONVERSION RATE, EXPANSION RATE, REVENUE CHURN), USER SEGMENTS, AND ANY DATA ON FEATURE USAGE BY TIER}}"
+
 Help me diagnose monetization. Follow these steps precisely:
 
 ### Step 1: Map the Revenue Architecture

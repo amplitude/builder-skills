@@ -25,6 +25,8 @@ Here is the idea, draft, plan, or proposal:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE THE IDEA, DRAFT, SPEC, PROPOSAL, SLACK MESSAGE, OR ROUGH PLAN HERE}}"
+
 Work through these four beats in order:
 
 ### 1. The Kernel — What You're Really Building

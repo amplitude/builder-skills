@@ -23,6 +23,8 @@ Here is the product idea, feature concept, or strategic bet:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE YOUR IDEA — ROUGH NOTES, SLACK THREADS, BRAINSTORM OUTPUT, OR A ONE-LINER}}"
+
 Write a PR/FAQ document using this structure:
 
 ### PRESS RELEASE

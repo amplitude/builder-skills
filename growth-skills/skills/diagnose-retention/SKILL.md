@@ -23,6 +23,8 @@ Here is what I'm working with:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{DESCRIBE YOUR PRODUCT, YOUR CURRENT RETENTION NUMBERS (D1, D7, D30, D90 IF YOU HAVE THEM), YOUR NATURAL USAGE FREQUENCY, USER SEGMENTS, AND ANY AMPLITUDE DASHBOARDS OR CHARTS YOU HAVE}}"
+
 Help me diagnose retention. Follow these steps precisely:
 
 ### Step 1: Establish the Retention Baseline

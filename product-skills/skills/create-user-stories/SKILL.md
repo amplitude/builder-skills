@@ -23,6 +23,8 @@ Here is the feature or spec to break down:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE YOUR PRD, FEATURE DESCRIPTION, DESIGN LINKS, OR ROUGH REQUIREMENTS HERE}}"
+
 Break this into user stories using the following structure for each:
 
 **Title:** Short, descriptive name for the story

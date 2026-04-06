@@ -23,6 +23,8 @@ Here are the raw notes from user research:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE YOUR INTERVIEW NOTES, SURVEY RESPONSES, SUPPORT TICKETS, OR FEEDBACK HERE}}"
+
 Synthesize this into a research summary that includes:
 
 1. **Key Themes** — The 3-5 most prominent patterns across the data. For each theme, include supporting quotes or examples.

@@ -23,6 +23,8 @@ Here is the context about the product, customer segment, or problem space:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE YOUR CUSTOMER RESEARCH, INTERVIEW NOTES, CHURN DATA, FEATURE REQUESTS, OR PRODUCT DESCRIPTION HERE}}"
+
 Analyze this through the JTBD lens and produce:
 
 1. **Functional Jobs** — The core tasks customers are trying to accomplish. What are they trying to get done? What does the workflow look like today? Measure by: time savings, effort reduction, accuracy, throughput.

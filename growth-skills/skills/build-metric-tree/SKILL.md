@@ -23,6 +23,8 @@ Here is what I'm working with:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{DESCRIBE YOUR TOP-LINE METRIC, YOUR PRODUCT, AND ANY DATA YOU HAVE — e.g. current values, segments, known breakdowns, or a goal you're trying to hit}}"
+
 Help me build a metric tree. Follow these steps precisely:
 
 ### Step 1: Establish the Metric Hierarchy

@@ -23,6 +23,8 @@ Here is the raw context for the feature or project:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE YOUR NOTES, SLACK THREADS, BULLET POINTS, OR ROUGH IDEAS HERE}}"
+
 Based on this context, write a structured PRD that includes:
 
 1. **Problem Statement** — What problem are we solving and for whom?

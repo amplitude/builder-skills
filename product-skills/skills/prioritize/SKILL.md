@@ -23,6 +23,8 @@ Here is the list to prioritize:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{PASTE YOUR LIST OF IDEAS, FEATURES, INITIATIVES, BUGS, OR OPTIONS HERE. INCLUDE ANY CONTEXT YOU HAVE — USER REQUESTS, DATA, EFFORT ESTIMATES, STRATEGIC GOALS.}}"
+
 The primary goal or constraint is: {{WHAT ARE YOU OPTIMIZING FOR? e.g., "maximize retention", "ship before Q2", "reduce churn in enterprise segment", "biggest bang for smallest effort"}}
 
 Apply this process:

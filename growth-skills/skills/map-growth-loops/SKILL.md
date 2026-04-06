@@ -23,6 +23,8 @@ Here is what I'm working with:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{DESCRIBE YOUR PRODUCT, HOW USERS DISCOVER AND USE IT, YOUR CURRENT GROWTH CHANNELS, ANY SHARING/COLLABORATION FEATURES, YOUR CONTENT STRATEGY, AND ANY DATA ON REFERRALS, ORGANIC GROWTH, OR USER-GENERATED CONTENT}}"
+
 Help me map my growth loops. Follow these steps precisely:
 
 ### Step 1: Identify Candidate Loops

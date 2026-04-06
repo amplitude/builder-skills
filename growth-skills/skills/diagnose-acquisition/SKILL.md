@@ -23,6 +23,8 @@ Here is what I'm working with:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{DESCRIBE YOUR PRODUCT, CURRENT SIGNUP VOLUME, ACQUISITION CHANNELS (ORGANIC, PAID, REFERRAL, CONTENT, PARTNERSHIPS, ETC.), ANY DATA ON CAC, CHANNEL BREAKDOWN, ACTIVATION RATES BY CHANNEL, OR AMPLITUDE/ANALYTICS DASHBOARDS}}"
+
 Help me diagnose acquisition. Follow these steps precisely:
 
 ### Step 1: Decompose Acquisition Volume

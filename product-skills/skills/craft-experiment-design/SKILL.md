@@ -23,6 +23,8 @@ Here is what I want to test:
 $ARGUMENTS
 </context>
 
+> If the above is blank, ask the user: "{{DESCRIBE THE CHANGE YOU WANT TO TEST AND WHY}}"
+
 Help me design an experiment plan that includes:
 
 1. **Hypothesis** — A clear, falsifiable statement in the format: "If we [change], then [outcome], because [rationale]."
