@@ -3,10 +3,6 @@ name: update-knowledge-base
 description: Cross-reference recently shipped tickets against your help center and changelog to detect outdated articles, missing documentation, and undocumented features. Suggests updates and writes draft copy where possible. Use after each release or on a weekly cadence.
 suggest_when: User says "update docs", "documentation is out of date", "update knowledge base", "what docs need updating", "keep help center in sync", or wants to ensure documentation stays current with what shipped.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Update Knowledge Base
 

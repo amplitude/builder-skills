@@ -3,10 +3,6 @@ name: interview-scheduling
 description: Find the most active users in Amplitude, check your Google Calendar for open slots, and create personalised Gmail drafts inviting them to a research interview. Never sends — always saves as drafts for your review. Use when planning a user research sprint.
 suggest_when: User says "schedule interviews", "reach out to users", "user research outreach", "find users to talk to", "draft interview invites", or wants to recruit participants for user research.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Interview Scheduling
 

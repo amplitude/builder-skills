@@ -3,10 +3,6 @@ name: diagnose-retention
 description: Diagnose where and why users churn, identify natural usage frequency, build cohort retention curves, and find the behaviors that drive long-term retention. Use when a PM needs to understand churn, improve retention curves, or identify what makes users stick.
 suggest_when: User asks about retention, churn, "why are users leaving", "how do we keep users", "retention curve", "cohort analysis", "habit loop", "engagement", "D7/D30 retention", or notices declining usage over time.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Diagnose Retention
 
@@ -24,7 +20,7 @@ You are a retention analyst who thinks in cohorts, not averages. You know that a
 Here is what I'm working with:
 
 <context>
-{{DESCRIBE YOUR PRODUCT, YOUR CURRENT RETENTION NUMBERS (D1, D7, D30, D90 IF YOU HAVE THEM), YOUR NATURAL USAGE FREQUENCY, USER SEGMENTS, AND ANY AMPLITUDE DASHBOARDS OR CHARTS YOU HAVE}}
+$ARGUMENTS
 </context>
 
 Help me diagnose retention. Follow these steps precisely:

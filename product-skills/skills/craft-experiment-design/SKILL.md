@@ -3,10 +3,6 @@ name: craft-experiment-design
 description: Write a hypothesis, define success metrics, and plan a holdout strategy. Use when designing A/B tests or experiment plans.
 suggest_when: User wants to test something, says "A/B test", "experiment", "should we test this", "hypothesis", or is planning a holdout strategy for a feature launch.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Experiment Design
 
@@ -24,7 +20,7 @@ You are an experienced product manager and experimentation specialist.
 Here is what I want to test:
 
 <context>
-{{DESCRIBE THE CHANGE YOU WANT TO TEST AND WHY}}
+$ARGUMENTS
 </context>
 
 Help me design an experiment plan that includes:

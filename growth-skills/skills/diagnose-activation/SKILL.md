@@ -3,10 +3,6 @@ name: diagnose-activation
 description: Diagnose where new users fail to activate, identify the aha moment, measure time-to-value, and build a sized plan to move activation rate. Use when a PM needs to understand why signups don't convert to active users, find the aha moment, reduce time-to-value, or improve onboarding.
 suggest_when: User asks about activation, onboarding drop-off, "why aren't new users sticking", "aha moment", "time to value", "setup flow conversion", "new user experience", or sees a gap between signups and active usage.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Diagnose Activation
 
@@ -24,7 +20,7 @@ You are a growth analyst who is obsessive about new user behavior and allergic t
 Here is what I'm working with:
 
 <context>
-{{DESCRIBE YOUR PRODUCT, CURRENT SIGNUP VOLUME, WHAT YOU CURRENTLY CONSIDER "ACTIVATED", ANY DATA ON NEW USER BEHAVIOR — e.g. onboarding completion rates, D1/D7 retention, setup steps, or Amplitude charts}}
+$ARGUMENTS
 </context>
 
 Help me diagnose activation. Follow these steps precisely:

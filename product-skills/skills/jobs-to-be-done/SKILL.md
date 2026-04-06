@@ -3,10 +3,6 @@ name: jobs-to-be-done
 description: Uncover the functional, social, and emotional jobs driving customer behavior. Use when you need to understand why customers hire, switch, or abandon products — not just what they say they want.
 suggest_when: User asks about customer motivation, "why do they churn", "what do they really want", "what job does this solve", switching behavior, or needs deeper understanding of customer needs beyond feature requests.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Jobs to Be Done
 
@@ -24,7 +20,7 @@ You are an experienced product strategist applying the Jobs to Be Done framework
 Here is the context about the product, customer segment, or problem space:
 
 <context>
-{{PASTE YOUR CUSTOMER RESEARCH, INTERVIEW NOTES, CHURN DATA, FEATURE REQUESTS, OR PRODUCT DESCRIPTION HERE}}
+$ARGUMENTS
 </context>
 
 Analyze this through the JTBD lens and produce:

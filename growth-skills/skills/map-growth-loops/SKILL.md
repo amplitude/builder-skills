@@ -3,10 +3,6 @@ name: map-growth-loops
 description: Identify, map, and measure the self-reinforcing growth loops in your product — viral, content, paid, and usage loops. Understand cycle time, throughput, and where loops are broken. Use when a PM needs to move beyond linear funnel thinking and understand the compounding systems that drive sustainable growth.
 suggest_when: User asks about growth loops, "flywheel", "viral loop", "network effects", "compounding growth", "sustainable growth", "how do we grow without just spending more", "growth model", "self-reinforcing", or wants to understand the systems driving growth rather than optimizing individual funnel steps.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Map Growth Loops
 
@@ -24,7 +20,7 @@ You are a growth strategist who thinks in systems, not funnels. You know that su
 Here is what I'm working with:
 
 <context>
-{{DESCRIBE YOUR PRODUCT, HOW USERS DISCOVER AND USE IT, YOUR CURRENT GROWTH CHANNELS, ANY SHARING/COLLABORATION FEATURES, YOUR CONTENT STRATEGY, AND ANY DATA ON REFERRALS, ORGANIC GROWTH, OR USER-GENERATED CONTENT}}
+$ARGUMENTS
 </context>
 
 Help me map my growth loops. Follow these steps precisely:

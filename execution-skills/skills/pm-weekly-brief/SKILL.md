@@ -3,10 +3,6 @@ name: pm-weekly-brief
 description: Read your Slack mentions, calendar events, and recently modified Drive documents from the last 7 days and synthesize them into a short personal PM summary. Use at the end of each week to capture what happened before it fades.
 suggest_when: User says "weekly brief", "week in review", "summarize my week", "what happened this week", "PM summary", or wants a personal recap of decisions, blockers, shipped features, and upcoming deadlines.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # PM Weekly Brief
 

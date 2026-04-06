@@ -3,10 +3,6 @@ name: churn-lost-deal-analysis
 description: Read lost deals and churned accounts from your CRM, extract reasons clustered by theme (missing features, pricing, competitors, UX), and write a prioritized weekly analysis with product improvement recommendations. Use before roadmap planning or to build the case for prioritizing retention work.
 suggest_when: User says "churn analysis", "why are we losing deals", "lost deal report", "analyze churn", "why do customers leave", or wants to turn CRM loss reasons into concrete product insights.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Churn / Lost Deal Analysis
 

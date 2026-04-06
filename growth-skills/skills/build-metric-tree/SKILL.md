@@ -3,10 +3,6 @@ name: build-metric-tree
 description: Decompose a top-line metric into a quantified metric tree with mathematical relationships, size each node, and identify where the real leverage is. Use when a PM needs to understand what drives a metric, where to focus, or where NOT to focus.
 suggest_when: User wants to break down a metric, build a KPI tree, find growth levers, understand what drives a number, asks "how do we move X", "where should we focus", "what levers do we have", or is setting goals and needs to understand metric relationships.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Build a Metric Tree
 
@@ -24,7 +20,7 @@ You are a growth-minded product strategist who is rigorous about quantitative de
 Here is what I'm working with:
 
 <context>
-{{DESCRIBE YOUR TOP-LINE METRIC, YOUR PRODUCT, AND ANY DATA YOU HAVE — e.g. current values, segments, known breakdowns, or a goal you're trying to hit}}
+$ARGUMENTS
 </context>
 
 Help me build a metric tree. Follow these steps precisely:

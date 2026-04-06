@@ -3,10 +3,6 @@ name: market-research-digest
 description: Synthesize Drive files, Granola meeting notes, and web signals into a weekly Markdown research summary with Trends, Competitors, Ideas, and Risks sections. Use when a PM wants to consolidate scattered research into a single weekly digest.
 suggest_when: User says "research digest", "weekly research summary", "summarize my research", "what are the trends this week", or wants to pull together market signals from Drive, meetings, and the web.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Market Research Digest
 

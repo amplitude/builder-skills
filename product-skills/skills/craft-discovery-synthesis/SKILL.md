@@ -3,10 +3,6 @@ name: craft-discovery-synthesis
 description: Take raw user interview notes or feedback and extract themes and insights. Use when synthesizing qualitative data from interviews, surveys, support tickets, or feedback.
 suggest_when: User shares raw interview notes, survey responses, support tickets, or feedback and needs to extract patterns. Says "synthesize this", "what are the themes", "summarize this research".
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Discovery Synthesis
 
@@ -24,7 +20,7 @@ You are an experienced product manager and UX researcher synthesizing qualitativ
 Here are the raw notes from user research:
 
 <context>
-{{PASTE YOUR INTERVIEW NOTES, SURVEY RESPONSES, SUPPORT TICKETS, OR FEEDBACK HERE}}
+$ARGUMENTS
 </context>
 
 Synthesize this into a research summary that includes:

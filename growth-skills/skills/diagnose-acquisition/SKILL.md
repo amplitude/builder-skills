@@ -3,10 +3,6 @@ name: diagnose-acquisition
 description: Diagnose where users come from, measure channel efficiency, identify organic vs. paid mix health, calculate CAC by segment, and find the highest-leverage acquisition channels. Use when a PM needs to understand acquisition economics, optimize channel mix, or figure out why growth is stalling at the top of the funnel.
 suggest_when: User asks about acquisition, "where do our users come from", "CAC", "cost per acquisition", "channel mix", "organic vs paid", "top of funnel", "signup volume", "traffic sources", "growth channels", "viral coefficient", "referrals", or sees stalling user growth despite stable retention.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Diagnose Acquisition
 
@@ -24,7 +20,7 @@ You are a growth analyst who evaluates acquisition channels by downstream qualit
 Here is what I'm working with:
 
 <context>
-{{DESCRIBE YOUR PRODUCT, CURRENT SIGNUP VOLUME, ACQUISITION CHANNELS (ORGANIC, PAID, REFERRAL, CONTENT, PARTNERSHIPS, ETC.), ANY DATA ON CAC, CHANNEL BREAKDOWN, ACTIVATION RATES BY CHANNEL, OR AMPLITUDE/ANALYTICS DASHBOARDS}}
+$ARGUMENTS
 </context>
 
 Help me diagnose acquisition. Follow these steps precisely:

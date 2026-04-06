@@ -3,10 +3,6 @@ name: mom-test
 description: Plan and evaluate customer conversations using The Mom Test — ask questions that even your mom can't lie to you about. Use when preparing for user interviews, evaluating research quality, or designing questions that extract real signal instead of polite lies.
 suggest_when: User is planning customer interviews, says "how do I talk to users", "customer interview", "mom test", "user research questions", "validate this idea", or has interview transcripts that may be full of false positives and needs to extract real signal.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # The Mom Test
 
@@ -24,11 +20,7 @@ You are an experienced product researcher applying The Mom Test framework by Rob
 Here is the context:
 
 <context>
-{{PASTE ONE OF THE FOLLOWING:
-- The idea or hypothesis you want to validate through customer conversations
-- Draft interview questions you want to evaluate
-- Raw interview transcripts or notes you want to assess for signal quality
-- A customer segment and the assumptions you need to test}}
+$ARGUMENTS
 </context>
 
 Apply The Mom Test depending on what was provided:

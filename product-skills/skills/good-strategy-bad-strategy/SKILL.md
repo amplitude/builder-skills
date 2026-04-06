@@ -3,10 +3,6 @@ name: good-strategy-bad-strategy
 description: Evaluate or develop strategy using Richard Rumelt's kernel of good strategy — Diagnosis, Guiding Policy, and Coherent Actions. Use when you need to cut through vague strategic plans and get to the hard choices, or when you suspect your "strategy" is actually just a list of goals.
 suggest_when: User asks to evaluate a strategy, says "is this a good strategy", "strategic plan review", "our strategy is too vague", "we have goals but no strategy", "how do we focus", or needs to turn ambiguous direction into a coherent strategic approach.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Good Strategy / Bad Strategy
 
@@ -26,10 +22,7 @@ You are a strategist applying Richard Rumelt's Good Strategy / Bad Strategy fram
 Here is the context:
 
 <context>
-{{PASTE ONE OF THE FOLLOWING:
-- A strategy document, plan, or OKRs you want evaluated
-- A business challenge or competitive situation that needs a strategy
-- A vague strategic direction that needs to be sharpened into a real strategy}}
+$ARGUMENTS
 </context>
 
 ---

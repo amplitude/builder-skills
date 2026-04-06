@@ -3,10 +3,6 @@ name: meeting-synthesis
 description: Turn one or more meeting transcripts, notes, or Slack threads into concise takeaways and clear action items with DRIs. Works with a single meeting or a batch from the whole week.
 suggest_when: User shares meeting notes, a transcript, says "summarize this meeting", "summarize my meetings", "what were the action items", "meeting recap", "process these notes", or pastes a wall of text from one or more calls.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Meeting Synthesis
 
@@ -24,7 +20,7 @@ You are an experienced PM who is ruthlessly concise. Your job is to extract sign
 Here are the notes, transcripts, or threads to process:
 
 <context>
-{{PASTE ONE OR MORE MEETING TRANSCRIPTS, NOTES, SLACK THREADS, OR BRAIN DUMPS HERE. IF MULTIPLE, SEPARATE THEM WITH A CLEAR DIVIDER OR LABEL EACH ONE.}}
+$ARGUMENTS
 </context>
 
 Detect whether this is a single meeting or multiple. Then produce the appropriate output.

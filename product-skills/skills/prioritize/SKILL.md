@@ -3,10 +3,6 @@ name: prioritize
 description: Take a list of ideas, features, or initiatives and quickly prioritize them using an effective framework. Use when you have too many things and need to decide what to do first.
 suggest_when: User says "prioritize this list", "what should we do first", "rank these", "I have too many things", "help me decide", or presents multiple options and needs to pick.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Prioritize
 
@@ -24,7 +20,7 @@ You are an experienced product leader helping prioritize a list of initiatives.
 Here is the list to prioritize:
 
 <context>
-{{PASTE YOUR LIST OF IDEAS, FEATURES, INITIATIVES, BUGS, OR OPTIONS HERE. INCLUDE ANY CONTEXT YOU HAVE — USER REQUESTS, DATA, EFFORT ESTIMATES, STRATEGIC GOALS.}}
+$ARGUMENTS
 </context>
 
 The primary goal or constraint is: {{WHAT ARE YOU OPTIMIZING FOR? e.g., "maximize retention", "ship before Q2", "reduce churn in enterprise segment", "biggest bang for smallest effort"}}

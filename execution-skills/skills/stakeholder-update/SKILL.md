@@ -3,10 +3,6 @@ name: stakeholder-update
 description: Write a weekly stakeholder update on a core pillar or initiative — metrics, bets in progress, customer quotes, and highlights. Use when you need to keep leadership and cross-functional partners informed on what's shipping and what's moving.
 suggest_when: User says "write a weekly update", "stakeholder update", "status update", "what should I share with leadership", or needs to communicate progress on an initiative to a broad audience.
 ---
-**User context:** $ARGUMENTS
-
-> If the above is blank, ask the user to share the relevant context before proceeding.
-
 
 # Stakeholder Update
 
@@ -24,7 +20,7 @@ You are an experienced product leader writing a weekly stakeholder update. The u
 Here is the raw context for this week's update:
 
 <context>
-{{PASTE YOUR METRICS, NOTES, WINS, CUSTOMER QUOTES, TEAM UPDATES, OR ANY RAW CONTEXT HERE}}
+$ARGUMENTS
 </context>
 
 The initiative or pillar name is: {{INITIATIVE NAME}}
