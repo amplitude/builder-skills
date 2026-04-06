@@ -117,14 +117,21 @@ Activation analysis, retention strategies, funnel optimization, and go-to-market
 
 ## How to Install
 
+**Step 1 — Add the marketplace** (one-time):
 ```bash
-git clone https://github.com/amplitude/builder-skills.git
-cd builder-skills
-./install.sh              # install everything
-./install.sh product-skills  # or install one plugin
+claude plugin marketplace add amplitude/builder-skills
 ```
 
-Skills install into `~/.claude/skills/` and are active globally across all Claude Code sessions. Invoke them naturally or by name (e.g. `/prioritize`, `/craft-spec`).
+**Step 2 — Install the plugin(s) you want:**
+```bash
+claude plugin install product-skills@builder-skills
+claude plugin install analytics-skills@builder-skills
+claude plugin install execution-skills@builder-skills
+claude plugin install growth-skills@builder-skills
+claude plugin install launch-skills@builder-skills
+```
+
+Skills are active globally across all Claude Code sessions. Invoke them naturally or by name (e.g. `/prioritize`, `/craft-spec`).
 
 **Use as prompt templates (no install needed):** open any `SKILL.md`, copy the prompt, paste into your LLM.
 
