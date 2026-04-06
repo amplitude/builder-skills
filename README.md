@@ -135,7 +135,7 @@ Skills are active globally across all Claude Code sessions. Invoke them naturall
 
 **Project-only install:** add `--scope project` to both commands to install into the current repo's `.claude/` instead of globally.
 
-**Use as prompt templates (no install needed):** open any `SKILL.md`, copy the prompt template, fill in the `{{PLACEHOLDERS}}`, and paste into your LLM.
+**Use as prompt templates (no install needed):** open any `SKILL.md`, copy the prompt template, replace `$ARGUMENTS` with your context, and paste into your LLM.
 
 ## Contributing
 
