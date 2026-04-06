@@ -3,6 +3,10 @@ name: monitor-experiments
 description: Monitors all active and recently completed experiments across Amplitude projects, triages them by importance, then runs deep analysis and reporting on the most impactful ones. Use when the user asks to "check on experiments", "experiment status", "experiment review", "what experiments are running", or wants a periodic experiment health report.
 suggest_when: User asks "what experiments are running", "check on experiments", "experiment status", wants a periodic experiment health report, or asks about all active tests.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Experiment Monitor & Report Generator
 

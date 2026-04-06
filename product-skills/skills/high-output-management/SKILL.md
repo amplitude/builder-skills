@@ -3,6 +3,10 @@ name: high-output-management
 description: Apply Andy Grove's High Output Management principles to diagnose team productivity, design processes, and make management decisions. Use for team structure, meeting design, decision-making, performance management, and operational leverage.
 suggest_when: User asks about team productivity, "how should I run my team", "meeting cadence", "performance reviews", "delegation", "1:1s", "team scaling", "management operating system", "OKRs", or needs to improve how their team operates.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # High Output Management
 

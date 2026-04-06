@@ -3,6 +3,10 @@ name: craft-spec
 description: Turn messy ideas into a clear, structured PRD. Use when you have rough notes, Slack threads, or half-formed ideas that need to become a product requirements document.
 suggest_when: User has rough notes and needs a spec, says "write a PRD", "spec this out", "turn this into a doc", or shares unstructured ideas that need to become a structured requirements document.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Spec Writing
 

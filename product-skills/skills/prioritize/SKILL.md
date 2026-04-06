@@ -3,6 +3,10 @@ name: prioritize
 description: Take a list of ideas, features, or initiatives and quickly prioritize them using an effective framework. Use when you have too many things and need to decide what to do first.
 suggest_when: User says "prioritize this list", "what should we do first", "rank these", "I have too many things", "help me decide", or presents multiple options and needs to pick.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Prioritize
 

@@ -3,6 +3,10 @@ name: craft-discovery-synthesis
 description: Take raw user interview notes or feedback and extract themes and insights. Use when synthesizing qualitative data from interviews, surveys, support tickets, or feedback.
 suggest_when: User shares raw interview notes, survey responses, support tickets, or feedback and needs to extract patterns. Says "synthesize this", "what are the themes", "summarize this research".
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Discovery Synthesis
 

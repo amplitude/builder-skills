@@ -3,6 +3,10 @@ name: create-dashboard
 description: Builds comprehensive Amplitude dashboards from requirements or goals, organizing charts into logical sections with appropriate layouts. Use when creating a complete dashboard from scratch or assembling existing charts into a cohesive view.
 suggest_when: User says "build a dashboard", "I need a dashboard for", or wants to assemble multiple charts into an organized view for a team, feature, or business area.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Create Dashboard
 

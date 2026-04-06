@@ -3,6 +3,10 @@ name: launch-blog-post
 description: Write technical launch blog posts optimized for both traditional SEO and AI engine citation (AEO). Use this skill whenever someone asks to write a launch announcement blog post, a technical blog post for a product release, a changelog-style post, or any written content tied to a product launch that lives on a blog or docs site. Also trigger for "write the blog post for this launch," "draft the announcement," "I need a technical write-up for this feature," or any request to create long-form launch content. Covers post structure, technical writing, benchmarks, tutorials, SEO, and answer engine optimization (AEO/GEO).
 suggest_when: User asks to write a launch blog post, draft an announcement post, create a technical write-up, write a changelog entry, "write the blog post for this launch", "draft the announcement", or any long-form content request tied to a product launch.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Launch Blog Post
 

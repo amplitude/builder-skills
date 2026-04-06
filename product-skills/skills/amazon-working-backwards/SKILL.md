@@ -3,6 +3,10 @@ name: amazon-working-backwards
 description: Write a PR/FAQ for a product idea using Amazon's Working Backwards process. Start from the customer press release and work backward to what needs to be built. Use when validating whether an idea is worth building before committing to a spec.
 suggest_when: User has a product idea and wants to pressure-test it, says "PR/FAQ", "working backwards", "write the press release first", "is this worth building", or wants to crystallize a vague idea into a compelling customer narrative before speccing it out.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Amazon Working Backwards
 

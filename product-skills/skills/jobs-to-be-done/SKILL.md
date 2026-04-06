@@ -3,6 +3,10 @@ name: jobs-to-be-done
 description: Uncover the functional, social, and emotional jobs driving customer behavior. Use when you need to understand why customers hire, switch, or abandon products — not just what they say they want.
 suggest_when: User asks about customer motivation, "why do they churn", "what do they really want", "what job does this solve", switching behavior, or needs deeper understanding of customer needs beyond feature requests.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Jobs to Be Done
 

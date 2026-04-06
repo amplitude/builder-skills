@@ -3,6 +3,10 @@ name: analyze-dashboard
 description: Deeply analyze Amplitude dashboards by analyzing key charts, surfacing top areas for concern and takeaways, identify anomalies, then explain changes using customer feedback trends.
 suggest_when: User asks to review a dashboard, prep for a meeting, "walk me through this dashboard", shares a dashboard URL, or wants a cross-chart summary of how things are going.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Analyze Dashboard
 

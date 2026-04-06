@@ -3,6 +3,10 @@ name: yes-and
 description: Think bigger about your idea while solving the real risks. Inspired by how the best startup advisors give feedback — they find the kernel of something great, push you to see the larger version you're missing, then help you defuse the landmines between here and there.
 suggest_when: User shares a draft, proposal, plan, or idea and wants feedback. Says "what do you think", "make this better", "build on this", "poke holes in this", "think bigger", or wants constructive critique that improves rather than tears down.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Yes, And
 

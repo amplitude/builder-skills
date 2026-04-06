@@ -3,6 +3,10 @@ name: craft-experiment-readout
 description: Summarize experiment results, call a winner, and draft a stakeholder-ready recommendation. Use when an A/B test is complete and you need to communicate results.
 suggest_when: User has experiment results, says "analyze this test", "did it win", "experiment readout", "share results with stakeholders", or needs to make a ship/kill/iterate decision on a completed A/B test.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Experiment Readout
 

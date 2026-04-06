@@ -3,6 +3,10 @@ name: create-user-stories
 description: Break a PRD or feature description into implementable user stories with acceptance criteria. Use when handing off to engineering or breaking down work for sprint planning.
 suggest_when: User has a spec and needs stories, says "break this down", "hand off to eng", "user stories", "sprint planning", "acceptance criteria", or needs to turn a PRD into implementable work items.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Create User Stories
 

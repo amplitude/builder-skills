@@ -3,6 +3,10 @@ name: playing-to-win
 description: Develop a strategy using the Playing to Win cascade — Winning Aspiration, Where to Play, How to Win, Capabilities, and Management Systems. Use when you need to make strategic choices about markets, positioning, and competitive advantage.
 suggest_when: User asks about strategy, "where should we compete", "how do we win", "strategic choices", "market entry", "positioning", or needs to move from vision to a coherent set of strategic decisions.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Playing to Win
 

@@ -3,6 +3,10 @@ name: analyze-feedback
 description: Synthesizes customer feedback into actionable themes including feature requests, bugs, pain points, and praise. Use when planning product roadmap, understanding user sentiment, investigating specific issues, or preparing voice-of-customer reports.
 suggest_when: User asks about customer feedback, NPS, complaints, feature requests, "what are customers saying", voice of customer, or wants to understand user sentiment.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Analyze Feedback
 

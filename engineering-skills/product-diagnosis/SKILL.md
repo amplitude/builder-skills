@@ -8,6 +8,10 @@ description: >
   Use when asked to "diagnose my product", "what's going on", "product health check",
   "what's broken", "where are users struggling", "give me a product diagnosis", or "what should I focus on".
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Product Diagnosis
 

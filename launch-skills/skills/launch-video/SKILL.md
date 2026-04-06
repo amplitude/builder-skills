@@ -3,6 +3,10 @@ name: launch-video
 description: Plan and produce video and visual assets for product launches — demo videos, GIFs, screenshots, and programmatic video with Remotion. Use this skill whenever someone asks to create a demo video, record a product walkthrough, make a launch GIF, plan visual assets for a launch, or decide what media to create for an announcement. Also trigger for "what should our demo video show," "how do we record the product," "I need visuals for the launch," "make a video for this launch," or any request about creating non-text media tied to a product release. Covers video scripting, recording, programmatic video (Remotion), GIF creation, screenshot best practices, and per-platform format guidance.
 suggest_when: User asks to create a demo video, record a walkthrough, make a launch GIF, plan visual assets, "what should our demo video show", "I need visuals for the launch", "make a video for this launch", or any request about creating non-text media for a product launch.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Launch Video & Visuals
 

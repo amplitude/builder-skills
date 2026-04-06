@@ -3,6 +3,10 @@ name: pre-mortem
 description: Identify what could go wrong before launch by imagining failure and working backward. Use after a spec is approved but before you ship — surfaces risks the team isn't talking about.
 suggest_when: User is about to launch, says "what could go wrong", "risk assessment", "are we ready to ship", "pre-mortem", or has a completed spec that hasn't been stress-tested for risks.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Pre-Mortem
 

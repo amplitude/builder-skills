@@ -3,6 +3,10 @@ name: analyze-account-health
 description: Summarizes B2B account health by analyzing usage patterns, engagement trends, risk signals, and expansion opportunities. Use for customer success reviews, renewal preparation, QBRs, or account prioritization.
 suggest_when: User asks about account health, churn risk, renewal prep, QBR, "how is this customer doing", or wants to assess engagement for a specific B2B account.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Analyze Account Health
 

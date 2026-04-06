@@ -3,6 +3,10 @@ name: diagnose-monetization
 description: Diagnose revenue leaks, analyze willingness-to-pay, evaluate packaging and pricing, and identify expansion revenue opportunities. Use when a PM needs to improve conversion to paid, optimize pricing, reduce revenue churn, or find upsell and expansion opportunities.
 suggest_when: User asks about monetization, pricing, "how do we make more money", "conversion to paid", "free-to-paid", "upsell", "expansion revenue", "willingness to pay", "packaging", "pricing tiers", ARPU, LTV, or revenue per user.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Diagnose Monetization
 

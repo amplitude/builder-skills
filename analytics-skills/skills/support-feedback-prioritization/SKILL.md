@@ -3,6 +3,10 @@ name: support-feedback-prioritization
 description: Pull Intercom tickets and Slack support messages from the past 7 days, classify each signal, enrich with CRM data (ARR, plan, renewal), score by customer value and churn risk, and output a tiered priority report saved to Drive. Use when you need a fast, data-driven view of what support signals matter most.
 suggest_when: User says "support triage", "prioritize feedback", "what are customers complaining about", "support digest", "what should I act on from support this week", or wants to turn raw support volume into a ranked action list.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Support Feedback Prioritization
 

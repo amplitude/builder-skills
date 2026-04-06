@@ -3,6 +3,10 @@ name: analyze-experiments
 description: Designs A/B tests with proper metrics and variants, analyzes running or completed experiments, and interprets results with statistical rigor. Use when setting up experiments, checking experiment status, analyzing results, or making ship decisions.
 suggest_when: User asks about a specific experiment, shares an experiment URL, asks "did this test win", "should we ship this", or wants statistical analysis of A/B test results.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Experiment Analyst
 

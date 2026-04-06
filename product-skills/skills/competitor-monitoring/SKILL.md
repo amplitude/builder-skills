@@ -3,6 +3,10 @@ name: competitor-monitoring
 description: Visit each competitor's homepage, features page, pricing page, and blog using Chrome MCP, then write a structured competitive intelligence report saved to Google Drive. Use for a standing weekly competitive pulse or an on-demand deep-dive.
 suggest_when: User says "competitor monitoring", "competitive intelligence", "what are competitors shipping", "competitive report", "track competitors", or wants to stay on top of competitor moves without doing manual research.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Competitor Monitoring
 

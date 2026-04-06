@@ -3,6 +3,10 @@ name: launch-distribution
 description: Plan and execute multi-channel distribution for product launches across X/Twitter, Reddit, LinkedIn, Hacker News, and other platforms. Use this skill whenever someone asks to create a distribution plan, figure out where to post a launch, build a press list, set up internal amplification, or coordinate multi-channel promotion. Also trigger for "where should we post this," "how do we get the word out," or any request about promoting or distributing a product announcement. Covers channel strategy (with deep playbooks for Twitter, Reddit, and LinkedIn), post-launch retro, and building a repeatable distribution engine.
 suggest_when: User asks to create a distribution plan, figure out where to post, set up internal amplification, coordinate multi-channel promotion, "where should we post this", "how do we get the word out", "help with Product Hunt", or any request about promoting a product announcement.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Launch Distribution
 

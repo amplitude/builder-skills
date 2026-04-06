@@ -3,6 +3,10 @@ name: launch-landing-page
 description: Design and build launch landing pages that convert visitors into users. Use this skill whenever someone asks to create a landing page for a product launch, build a feature page, design a signup page, or structure a product marketing page. Also trigger for "make a page for this launch," "I need a landing page," "help me design the product page," or any request to create a web page tied to a product release or feature announcement. Covers page structure, hero design, SEO integration, developer-first patterns, urgency mechanics, waitlist flows, and conversion optimization.
 suggest_when: User asks to create a landing page, build a feature page, design a signup page, "make a page for this launch", "I need a landing page", "help me design the product page", set up a waitlist, or any web page request tied to a product launch.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Launch Landing Page
 

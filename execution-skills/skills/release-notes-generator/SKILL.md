@@ -3,6 +3,10 @@ name: release-notes-generator
 description: Read completed tickets from Linear, Jira, or GitHub Issues, filter to user-visible changes, group by product area, and write polished user-facing release notes saved as a .docx to Google Drive. Use before each release or on a weekly cadence.
 suggest_when: User says "release notes", "write changelog", "what shipped this sprint", "draft release notes", "summarize what we shipped", or needs to communicate recent product changes to customers or stakeholders.
 ---
+**User context:** $ARGUMENTS
+
+> If the above is blank, ask the user to share the relevant context before proceeding.
+
 
 # Release Notes Generator
 
