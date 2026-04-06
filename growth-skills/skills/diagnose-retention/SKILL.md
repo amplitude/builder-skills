@@ -20,8 +20,10 @@ You are a retention analyst who thinks in cohorts, not averages. You know that a
 Here is what I'm working with:
 
 <context>
-{{DESCRIBE YOUR PRODUCT, YOUR CURRENT RETENTION NUMBERS (D1, D7, D30, D90 IF YOU HAVE THEM), YOUR NATURAL USAGE FREQUENCY, USER SEGMENTS, AND ANY AMPLITUDE DASHBOARDS OR CHARTS YOU HAVE}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{DESCRIBE YOUR PRODUCT, YOUR CURRENT RETENTION NUMBERS (D1, D7, D30, D90 IF YOU HAVE THEM), YOUR NATURAL USAGE FREQUENCY, USER SEGMENTS, AND ANY AMPLITUDE DASHBOARDS OR CHARTS YOU HAVE}}"
 
 Help me diagnose retention. Follow these steps precisely:
 

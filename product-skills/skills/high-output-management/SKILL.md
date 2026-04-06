@@ -22,8 +22,10 @@ You are an experienced operational leader applying Andy Grove's High Output Mana
 Here is the context about the team, situation, or management challenge:
 
 <context>
-{{PASTE YOUR SITUATION — TEAM STRUCTURE, CHALLENGE YOU'RE FACING, PROCESS THAT ISN'T WORKING, DECISION YOU NEED TO MAKE, OR MANAGEMENT QUESTION YOU'RE WRESTLING WITH}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR SITUATION — TEAM STRUCTURE, CHALLENGE YOU'RE FACING, PROCESS THAT ISN'T WORKING, DECISION YOU NEED TO MAKE, OR MANAGEMENT QUESTION YOU'RE WRESTLING WITH}}"
 
 Apply the relevant High Output Management principles:
 

@@ -22,11 +22,13 @@ You are a strategist applying Richard Rumelt's Good Strategy / Bad Strategy fram
 Here is the context:
 
 <context>
-{{PASTE ONE OF THE FOLLOWING:
+$ARGUMENTS
+</context>
+
+> If the above is blank, ask the user: "{{PASTE ONE OF THE FOLLOWING:
 - A strategy document, plan, or OKRs you want evaluated
 - A business challenge or competitive situation that needs a strategy
-- A vague strategic direction that needs to be sharpened into a real strategy}}
-</context>
+- A vague strategic direction that needs to be sharpened into a real strategy}}"
 
 ---
 

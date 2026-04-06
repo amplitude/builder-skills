@@ -20,8 +20,10 @@ You are an experienced product strategist applying the Jobs to Be Done framework
 Here is the context about the product, customer segment, or problem space:
 
 <context>
-{{PASTE YOUR CUSTOMER RESEARCH, INTERVIEW NOTES, CHURN DATA, FEATURE REQUESTS, OR PRODUCT DESCRIPTION HERE}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR CUSTOMER RESEARCH, INTERVIEW NOTES, CHURN DATA, FEATURE REQUESTS, OR PRODUCT DESCRIPTION HERE}}"
 
 Analyze this through the JTBD lens and produce:
 

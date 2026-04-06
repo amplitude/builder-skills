@@ -20,8 +20,10 @@ You are an experienced product manager breaking down a feature into user stories
 Here is the feature or spec to break down:
 
 <context>
-{{PASTE YOUR PRD, FEATURE DESCRIPTION, DESIGN LINKS, OR ROUGH REQUIREMENTS HERE}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR PRD, FEATURE DESCRIPTION, DESIGN LINKS, OR ROUGH REQUIREMENTS HERE}}"
 
 Break this into user stories using the following structure for each:
 

@@ -20,8 +20,10 @@ You are an experienced product manager conducting a pre-mortem risk analysis.
 Here is the context about the product, feature, or launch:
 
 <context>
-{{PASTE YOUR PRD, SPEC, LAUNCH PLAN, OR FEATURE DESCRIPTION HERE}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR PRD, SPEC, LAUNCH PLAN, OR FEATURE DESCRIPTION HERE}}"
 
 Imagine it is 30 days after launch and this has failed. Work backward from failure to identify what went wrong.
 

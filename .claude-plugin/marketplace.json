@@ -1,0 +1,47 @@
+{
+  "name": "builder-skills",
+  "owner": {
+    "name": "Amplitude"
+  },
+  "metadata": {
+    "description": "Open-source agent skills for builders — battle-tested for PMs, analysts, engineers, and marketers by the Amplitude team.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "product-skills",
+      "source": "./product-skills",
+      "description": "Craft & ship products — discovery, specs, experiments, readouts, competitive strategy"
+    },
+    {
+      "name": "analytics-skills",
+      "source": "./analytics-skills",
+      "description": "Analyze with Amplitude — dashboards, charts, experiments, feedback, account health"
+    },
+    {
+      "name": "execution-skills",
+      "source": "./execution-skills",
+      "description": "Stay on top of your product — briefings, meeting processing, stakeholder comms"
+    },
+    {
+      "name": "growth-skills",
+      "source": "./growth-skills",
+      "description": "Grow & optimize — activation, retention, monetization, acquisition, growth loops"
+    },
+    {
+      "name": "launch-skills",
+      "source": "./launch-skills",
+      "description": "Launch & announce — strategy, messaging, social, email, blog, video, distribution"
+    },
+    {
+      "name": "engineering-skills",
+      "source": "./engineering-skills",
+      "description": "Build & ship — technical diagnosis and product health analysis"
+    },
+    {
+      "name": "design-skills",
+      "source": "./design-skills",
+      "description": "Design & research — coming soon"
+    }
+  ]
+}

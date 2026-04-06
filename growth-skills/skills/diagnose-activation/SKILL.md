@@ -20,8 +20,10 @@ You are a growth analyst who is obsessive about new user behavior and allergic t
 Here is what I'm working with:
 
 <context>
-{{DESCRIBE YOUR PRODUCT, CURRENT SIGNUP VOLUME, WHAT YOU CURRENTLY CONSIDER "ACTIVATED", ANY DATA ON NEW USER BEHAVIOR — e.g. onboarding completion rates, D1/D7 retention, setup steps, or Amplitude charts}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{DESCRIBE YOUR PRODUCT, CURRENT SIGNUP VOLUME, WHAT YOU CURRENTLY CONSIDER "ACTIVATED", ANY DATA ON NEW USER BEHAVIOR — e.g. onboarding completion rates, D1/D7 retention, setup steps, or Amplitude charts}}"
 
 Help me diagnose activation. Follow these steps precisely:
 

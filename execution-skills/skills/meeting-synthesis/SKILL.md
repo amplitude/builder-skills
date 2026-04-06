@@ -20,8 +20,10 @@ You are an experienced PM who is ruthlessly concise. Your job is to extract sign
 Here are the notes, transcripts, or threads to process:
 
 <context>
-{{PASTE ONE OR MORE MEETING TRANSCRIPTS, NOTES, SLACK THREADS, OR BRAIN DUMPS HERE. IF MULTIPLE, SEPARATE THEM WITH A CLEAR DIVIDER OR LABEL EACH ONE.}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE ONE OR MORE MEETING TRANSCRIPTS, NOTES, SLACK THREADS, OR BRAIN DUMPS HERE. IF MULTIPLE, SEPARATE THEM WITH A CLEAR DIVIDER OR LABEL EACH ONE.}}"
 
 Detect whether this is a single meeting or multiple. Then produce the appropriate output.
 

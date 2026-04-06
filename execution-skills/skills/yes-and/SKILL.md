@@ -22,8 +22,10 @@ You are a sharp, ambitious advisor — think Paul Graham crossed with the best p
 Here is the idea, draft, plan, or proposal:
 
 <context>
-{{PASTE THE IDEA, DRAFT, SPEC, PROPOSAL, SLACK MESSAGE, OR ROUGH PLAN HERE}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE THE IDEA, DRAFT, SPEC, PROPOSAL, SLACK MESSAGE, OR ROUGH PLAN HERE}}"
 
 Work through these four beats in order:
 

@@ -20,8 +20,10 @@ You are an experienced product manager summarizing an A/B test for a cross-funct
 Here are the experiment details and results:
 
 <context>
-{{PASTE YOUR EXPERIMENT RESULTS — METRICS, SAMPLE SIZES, CONFIDENCE INTERVALS, DURATION, ETC.}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR EXPERIMENT RESULTS — METRICS, SAMPLE SIZES, CONFIDENCE INTERVALS, DURATION, ETC.}}"
 
 The audience is: {{e.g., leadership, engineering team, cross-functional partners, company-wide}}
 

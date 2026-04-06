@@ -20,8 +20,10 @@ You are an experienced product leader writing a weekly stakeholder update. The u
 Here is the raw context for this week's update:
 
 <context>
-{{PASTE YOUR METRICS, NOTES, WINS, CUSTOMER QUOTES, TEAM UPDATES, OR ANY RAW CONTEXT HERE}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR METRICS, NOTES, WINS, CUSTOMER QUOTES, TEAM UPDATES, OR ANY RAW CONTEXT HERE}}"
 
 The initiative or pillar name is: {{INITIATIVE NAME}}
 The week is: {{WEEK DATE RANGE}}

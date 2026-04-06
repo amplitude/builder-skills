@@ -20,8 +20,10 @@ You are an experienced product leader applying Amazon's Working Backwards proces
 Here is the product idea, feature concept, or strategic bet:
 
 <context>
-{{PASTE YOUR IDEA — ROUGH NOTES, SLACK THREADS, BRAINSTORM OUTPUT, OR A ONE-LINER}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR IDEA — ROUGH NOTES, SLACK THREADS, BRAINSTORM OUTPUT, OR A ONE-LINER}}"
 
 Write a PR/FAQ document using this structure:
 

@@ -20,8 +20,10 @@ You are an experienced product manager and UX researcher synthesizing qualitativ
 Here are the raw notes from user research:
 
 <context>
-{{PASTE YOUR INTERVIEW NOTES, SURVEY RESPONSES, SUPPORT TICKETS, OR FEEDBACK HERE}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR INTERVIEW NOTES, SURVEY RESPONSES, SUPPORT TICKETS, OR FEEDBACK HERE}}"
 
 Synthesize this into a research summary that includes:
 

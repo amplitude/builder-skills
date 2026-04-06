@@ -20,8 +20,10 @@ You are a growth-minded product strategist who is rigorous about quantitative de
 Here is what I'm working with:
 
 <context>
-{{DESCRIBE YOUR TOP-LINE METRIC, YOUR PRODUCT, AND ANY DATA YOU HAVE — e.g. current values, segments, known breakdowns, or a goal you're trying to hit}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{DESCRIBE YOUR TOP-LINE METRIC, YOUR PRODUCT, AND ANY DATA YOU HAVE — e.g. current values, segments, known breakdowns, or a goal you're trying to hit}}"
 
 Help me build a metric tree. Follow these steps precisely:
 

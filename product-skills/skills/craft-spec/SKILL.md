@@ -20,8 +20,10 @@ You are an experienced product manager helping me write a PRD.
 Here is the raw context for the feature or project:
 
 <context>
-{{PASTE YOUR NOTES, SLACK THREADS, BULLET POINTS, OR ROUGH IDEAS HERE}}
+$ARGUMENTS
 </context>
+
+> If the above is blank, ask the user: "{{PASTE YOUR NOTES, SLACK THREADS, BULLET POINTS, OR ROUGH IDEAS HERE}}"
 
 Based on this context, write a structured PRD that includes:
 
