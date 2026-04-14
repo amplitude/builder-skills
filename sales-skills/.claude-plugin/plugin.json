@@ -1,0 +1,19 @@
+{
+  "name": "sales-skills",
+  "description": "Sales skills — pre-call intelligence, account research, and customer briefings for SEs and AEs.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amplitude"
+  },
+  "keywords": [
+    "sales",
+    "pre-call",
+    "account-intelligence",
+    "sales-engineering",
+    "customer-brief",
+    "meeting-prep"
+  ],
+  "homepage": "https://github.com/amplitude/builder-skills",
+  "repository": "https://github.com/amplitude/builder-skills",
+  "license": "MIT"
+}

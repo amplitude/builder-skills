@@ -42,6 +42,11 @@
       "name": "design-skills",
       "source": "./design-skills",
       "description": "Design & research — coming soon"
+    },
+    {
+      "name": "sales-skills",
+      "source": "./sales-skills",
+      "description": "Sales & pre-call intelligence — account research, customer briefs, meeting prep for SEs and AEs"
     }
   ]
 }
