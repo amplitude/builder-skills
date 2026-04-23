@@ -97,6 +97,18 @@ Plan, message, and execute product launches at any scale — from major products
 | Skill | [launch-distribution](launch-skills/skills/launch-distribution/SKILL.md) | Execute multi-channel distribution — Twitter, Reddit, LinkedIn, HN, Product Hunt, press |
 | Skill | [launch-metrics](launch-skills/skills/launch-metrics/SKILL.md) | Set up UTMs, define KPIs by tier, run data-driven retros, and build a launch history |
 
+### [content-marketing-skills](content-marketing-skills/) — Create citation-winning content
+
+Find AI visibility gaps, generate citation-winning content, and push drafts into your CMS.
+
+| Type | Name | What it does |
+|------|------|-------------|
+| Skill | [prompt-gap-to-publish](content-marketing-skills/skills/prompt-gap-to-publish/SKILL.md) | Find weak AI visibility topics and turn them into publish-ready articles, landing pages, or FAQs |
+| Skill | [citation-recovery-optimizer](content-marketing-skills/skills/citation-recovery-optimizer/SKILL.md) | Improve existing pages to increase AI citations and publish revised drafts to the CMS |
+| Skill | [competitor-prompt-hijacker](content-marketing-skills/skills/competitor-prompt-hijacker/SKILL.md) | Identify prompts competitors win and generate comparison or rebuttal content to take them back |
+| Skill | [source-outranker](content-marketing-skills/skills/source-outranker/SKILL.md) | Analyze which third-party sources AI models cite and create stronger source assets designed to outrank them |
+| Skill | [simulation-backed-publisher](content-marketing-skills/skills/simulation-backed-publisher/SKILL.md) | Generate multiple content variants, evaluate the best one, and publish the winning draft to the CMS |
+
 ### [growth-skills](growth-skills/) — Grow & optimize
 
 Activation analysis, retention strategies, funnel optimization, and go-to-market planning.
@@ -129,6 +141,7 @@ claude plugin install analytics-skills@builder-skills
 claude plugin install execution-skills@builder-skills
 claude plugin install growth-skills@builder-skills
 claude plugin install launch-skills@builder-skills
+claude plugin install content-marketing-skills@builder-skills
 ```
 
 Skills are active globally across all Claude Code sessions. Invoke them naturally or by name (e.g. `/prioritize`, `/craft-spec`).

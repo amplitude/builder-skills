@@ -1,0 +1,21 @@
+{
+  "name": "content-marketing-skills",
+  "description": "Content marketing skills — find AI visibility gaps, generate citation-winning content, and push drafts into your CMS.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Amplitude"
+  },
+  "keywords": [
+    "content-marketing",
+    "seo",
+    "geo",
+    "ai-visibility",
+    "citation-optimization",
+    "competitor-analysis",
+    "cms",
+    "publishing"
+  ],
+  "homepage": "https://github.com/amplitude/amplitude-builder-skills",
+  "repository": "https://github.com/amplitude/amplitude-builder-skills",
+  "license": "MIT"
+}
