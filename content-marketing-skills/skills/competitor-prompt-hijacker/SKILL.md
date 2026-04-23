@@ -1,204 +1,251 @@
 ---
 name: competitor-prompt-hijacker
 description: >
-  Use this skill whenever a user wants to win back prompts where competitors are getting cited.
-  Trigger on requests like "what prompts is Mixpanel beating us on", "build competitor comparison
-  pages from AI Visibility", "create alternatives content to take citations back", "where are
-  competitors outranking us in AI answers", or any request to generate competitor-focused content
-  from AI Visibility data. This skill identifies the best competitor prompt bucket to attack,
-  diagnoses what the competitor page is doing, writes the right content asset, recommends simulation,
-  and pushes the draft into the CMS when available.
-suggest_when: User asks to identify competitor-winning prompts, create competitor comparison pages, write alternatives pages, take back AI citations, or generate competitive rebuttal content from AI Visibility.
+  Use this skill whenever a user wants to win AI citations on prompts that competitors currently
+  dominate — whether they say "competitors are getting cited instead of us", "we're losing on these
+  prompts", "how do I outrank [competitor] in AI answers", "find prompts where we should be winning",
+  "create content to beat [competitor]", or any variation where the goal is capturing AI share on
+  prompts a competitor currently owns. This skill pulls competitor visibility data from AI Visibility,
+  identifies the specific prompts where competitors win and Amplitude is absent, clusters them by
+  intent, and produces targeted comparison pages, alternatives content, or rebuttal assets — then
+  pushes drafts to CMS. Trigger on any mention of competitor, prompt hijack, outrank, or "why is
+  [competitor] getting cited instead of us".
 ---
 
 # Competitor Prompt Hijacker
 
-**Identify prompts competitors win, then create the exact page needed to take those citations back.**
-
-This skill is for competitive AI visibility workflows. The goal is to create content that intercepts
-how models answer comparison and alternatives prompts, using prompt-level evidence from AI Visibility.
-
-Treat AI Visibility as a prompt-and-citation system, not classic SEO volume data.
+You're helping a content team steal AI citations back from competitors. When an AI model is asked
+"what's the best product analytics tool" or "Mixpanel vs Amplitude", the answer it gives is
+determined by what's been written. This skill finds every prompt where a competitor is winning and
+Amplitude is absent — and produces content specifically designed to flip those citations.
 
 ---
 
-## Instructions
+## Step 0 — CMS Discovery (run once at the start of every session)
 
-### Step 0 — Confirm data and publishing setup
+Before doing anything else, figure out where the revised content will land. This avoids a
+copy-paste dead end at the end of the workflow.
 
-Before analysis:
+### Check for already-connected CMS tools
 
-1. Confirm which brand to optimize for.
-2. Confirm competitor focus (single competitor or all).
-3. Check CMS availability and publishing target:
-   - Sanity
-   - Contentful
-   - HubSpot CMS
-   - WordPress
-   - Ghost
-   - Webflow
-4. Ask if the output should be a draft only (default) or if they only want Markdown.
+Scan the tools currently available in your context. Known CMS MCP patterns:
 
-If no CMS is connected, proceed with a full Markdown draft.
+| CMS | Tool name patterns to look for |
+|-----|-------------------------------|
+| Sanity | `sanity`, `create_documents_from_markdown`, `patch_document_from_markdown` |
+| Contentful | `contentful`, `create_entry`, `update_entry` |
+| HubSpot CMS | `hubspot`, `update_blog_post`, `create_blog_post` |
+| WordPress | `wordpress`, `wp_update_post`, `wp_create_post` |
+| Ghost | `ghost`, `update_post`, `create_post` |
+| Webflow | `webflow`, `update_cms_item`, `create_cms_item` |
 
----
+**If a CMS MCP is already connected:** confirm in one line:
+*"I can see [CMS] is connected — I'll push the new content there as a draft when we're done.
+Sound good?"* Then proceed to Step 1.
 
-### Step 1 — Pull competitor prompt opportunities
+**If nothing is connected:** ask once, concisely:
 
-Use AI Visibility MCP tools to pull prompt-level gaps where the competitor is cited above the target brand.
+> "Before we start — which CMS do you publish to? I can push the content directly there as a
+> draft instead of handing you a block of text to paste."
 
-Prioritize prompt clusters that map to one of these buckets:
+Offer: Sanity · Contentful · HubSpot · WordPress · Webflow · Ghost · Other · "Just give me the
+content"
 
-1. **Direct comparison**: "Amplitude vs Mixpanel", "Mixpanel vs Amplitude"
-2. **Alternatives**: "Mixpanel alternatives", "alternatives to GA4"
-3. **Category capture**: "best product analytics tools", "best analytics tools for PMs"
-
-For each bucket, compute:
-
-- Number of prompts
-- Total response count
-- Current citation split (target brand vs competitor)
-- Overall rank and visibility gap
-
-Present a concise opportunity table and identify the leading bucket by total response count.
+Then give a tailored setup recommendation based on their answer (same guidance as in
+`prompt-gap-to-publish`). Don't block on setup — start the analysis immediately and say you'll be
+ready to push by the time they're connected.
 
 ---
 
-### Step 2 — Ask for bucket selection
+## Step 1 — Identify the Brand and Pull Competitor Landscape
 
-Ask:
+Use `list_ai_visibility_org_brands` to identify the brand (or use what the user specified).
 
-> "Which bucket do you want to attack first — direct comparison, alternatives, or category capture?"
+Then call `get_ai_visibility_competitors` with the selected `orgBrandId`. This returns the full
+competitor list with fields: `brandId`, `brandName`, `brandUrl`, `visibility`, `avgRank`.
 
-If they want your recommendation, suggest the bucket with the highest total response count.
+Sort by `visibility` descending. The competitors with the highest visibility are the ones most
+actively winning citations that should belong to Amplitude.
 
----
+Present a quick table to orient the user:
 
-### Step 3 — Diagnose what the competitor is saying
+| Competitor | Visibility % | Avg Rank |
+|-----------|-------------|---------|
+| Google Analytics 4 | 46% | 2.1 |
+| Mixpanel | 34% | 2.8 |
+| ... | | |
 
-For the selected bucket:
-
-1. Fetch the top competitor page content with `web_fetch` if identifiable.
-2. If no specific URL is available, use model response text from AI Visibility prompts.
-3. Pull related pages on the target brand domain with `get_ai_visibility_pages`, filtered to
-   `amplitude.com` and the relevant competitor context.
-
-Compare competitor vs target brand content and capture:
-
-- **Missing counters**: claims the competitor makes that the target brand never answers
-- **Framing advantages**: how competitor positioning wins trust
-- **Proof structure**: benchmark tables, transparent pricing, customer examples, third-party proof, FAQ blocks
-- **Prompt overlap**: exact phrases shared between the winning prompt and competitor page text
-
-Summarize this diagnosis before writing.
+If the user already named a specific competitor, use that one and skip the selection step.
+Otherwise ask: *"Which competitor do you want to go after first?"*
 
 ---
 
-### Step 4 — Generate the right asset by bucket
+## Step 2 — Find the Prompts Where the Competitor Wins
 
-#### If bucket = Direct comparison
+Use `get_ai_visibility_prompts` with the `orgBrandId`. For each prompt, you need to understand:
+- How visible is the target competitor on this prompt?
+- How visible is Amplitude on this prompt?
 
-Create a page like:
+Look for prompts where:
+- Competitor visibility is high (above 50%) **and** Amplitude visibility is low (below 30%)
+- The prompt has high `responseCount` — more AI answers means more citation opportunity
+- The prompt intent is one where Amplitude should credibly win (not "how to use Google Analytics")
 
-- "Amplitude vs Mixpanel"
-- "Amplitude vs Google Analytics"
-- "Amplitude vs Heap"
-
-Include:
-
-- Direct answer in first 2 sentences
-- Comparison table
-- "When to choose [Competitor]"
-- "When to choose Amplitude"
-- FAQ with exact prompt language
-- Comparison-specific CTA
-
-#### If bucket = Alternatives
-
-Create a page like:
-
-- "Best Mixpanel alternatives"
-- "Top alternatives to Google Analytics for product teams"
-
-Include:
-
-- Ranked alternatives list
-- Honest pros and cons for each option
-- Segment-specific argument for Amplitude
-- FAQ block
-- Migration section when relevant
-
-#### If bucket = Category capture
-
-Create:
-
-- Category roundup
-- "Best tools for X" page
-- Category explainer with embedded comparison
-
-This asset should be less overtly brand-forward than direct comparison pages, while still positioning
-Amplitude as a leading answer.
+Also call `get_ai_visibility_prompt_responses` for the top 5–10 weakest prompts. Reading the actual
+LLM responses tells you exactly what AI models currently say — and what language, framing, and
+claims you need to counter.
 
 ---
 
-### Step 5 — Apply writing rules
+## Step 3 — Cluster the Prompts by Intent
 
-For every draft:
+Group the identified prompts into three buckets. These buckets map directly to content types:
 
-- Opening paragraph answers the prompt directly in first 2 sentences
-- Reuse competitor-winning phrasing where truthful, without copying
-- Include a 4-6 question FAQ block from real prompts
-- Add a comparison table whenever 2+ products are discussed
-- Keep tone fair and balanced; avoid one-sided chest-beating
-- Use concrete product details, not generic category claims
+**Bucket 1: Direct comparison** — prompts like "[Competitor] vs Amplitude", "Amplitude or
+[Competitor]", "which is better [Competitor] or Amplitude". These warrant a dedicated comparison
+page that covers both tools fairly and makes a clear recommendation for specific use cases.
+
+**Bucket 2: Alternatives and discovery** — prompts like "alternatives to [Competitor]",
+"[Competitor] competitors", "tools like [Competitor]", "best [Competitor] replacement". These
+warrant a listicle or alternatives page that positions Amplitude as the top recommendation.
+
+**Bucket 3: Category capture** — prompts like "best product analytics tool", "top digital analytics
+platforms", "what should I use instead of GA4". Amplitude is absent from the AI answer even though
+it's directly relevant. These warrant either a new category page or an upgrade to an existing one.
+
+Present the cluster breakdown:
+
+| Bucket | # Prompts | Example prompt | Amplitude visibility | Competitor visibility |
+|--------|-----------|---------------|---------------------|----------------------|
+| Direct comparison | 8 | "Mixpanel vs Amplitude" | 42% | 71% |
+| Alternatives | 5 | "Mixpanel alternatives" | 18% | 0% |
+| Category capture | 12 | "best product analytics" | 29% | 55% |
+
+Ask: *"Which bucket do you want to attack first — direct comparison, alternatives, or category
+capture?"* Wait for their pick, or suggest the one with the highest total response count if they
+want your recommendation.
+
+---
+
+## Step 4 — Diagnose What the Competitor Is Saying
+
+Fetch the actual content of the top-ranking competitor page for the selected bucket using
+`web_fetch`. If the competitor page isn't identifiable from the data, use the LLM responses from
+Step 2 to understand what claims are being made.
+
+Also pull any existing Amplitude page on this topic using `get_ai_visibility_pages` with
+`mentionsBrandId` for the competitor, filtered to `amplitude.com` domain.
+
+Compare:
+
+**Claims the competitor makes that Amplitude doesn't counter**: list each one. These are the gaps
+to fill.
+
+**Framing advantages the competitor has**: e.g., "Mixpanel leads with 'built for product teams'"
+while Amplitude's page is generic. Specific framing beats generic.
+
+**Questions the competitor answers that Amplitude's page doesn't**: pulled from the actual LLM
+responses — what does the AI answer say that Amplitude's content doesn't address?
+
+**Missing proof points**: pricing transparency, integration lists, customer segments, migration
+guides, performance benchmarks.
+
+Summarize the diagnosis in 4–6 bullet points before writing anything.
+
+---
+
+## Step 5 — Generate the Content
+
+Based on the selected bucket, produce one of the following. Write fully — real sentences, real
+claims, not a skeleton.
+
+### For Bucket 1: Direct Comparison Page
+
+Structure:
+- **H1**: "[Competitor] vs Amplitude: Which Product Analytics Tool is Right for You?" (or similar)
+- **TL;DR box** at the top (2–3 sentences): who each tool is best for, answered directly
+- **Overview section**: brief fair description of both tools
+- **Feature comparison table**: side-by-side on 8–12 dimensions most relevant to the target
+  audience (event tracking, session replay, A/B testing, pricing model, data governance, etc.)
+- **When to choose [Competitor]**: honest list — 3–4 scenarios where they're the better fit
+- **When to choose Amplitude**: 3–4 scenarios with specific capability callouts
+- **Migration section** (if relevant): "Switching from [Competitor]? Here's what to expect"
+- **FAQ block**: 5 Q&As drawn from the actual prompts in Bucket 1
+
+### For Bucket 2: Alternatives Page
+
+Structure:
+- **H1**: "Best [Competitor] Alternatives in [Year]: Compared by Product Teams"
+- **Opening paragraph**: answer the core question in 2 sentences — who switches from [Competitor]
+  and why
+- **Comparison table**: top 5–6 alternatives with key differentiators and best-for callouts;
+  Amplitude listed first with the strongest positioning
+- **Detailed section per alternative**: 150–200 words, covering what it does well, what it lacks,
+  and who it's best for
+- **Migration from [Competitor]**: data portability, instrumentation changes, learning curve
+- **FAQ block**: 4–5 Q&As from Bucket 2 prompts
+
+### For Bucket 3: Category Capture Page
+
+Structure:
+- **H1**: "Best [Category] Tools in [Year]: A Guide for Product Teams"
+- **Opening**: answer "what's the best X tool" directly in 2 sentences
+- **Comparison table**: 6–8 tools, with Amplitude positioned for the most valuable use cases
+- **Deep-dive sections** per tool or per use case
+- **How to choose**: decision framework with 4–5 criteria
+- **FAQ block**: 5 Q&As from Bucket 3 prompts
+
+### Meta fields (all page types)
 
 Always include:
-
-- `metaTitle`
-- `metaDescription`
-- `slug`
-
----
-
-### Step 6 — Recommend simulation before publishing
-
-Before publishing, explicitly suggest:
-
-> "Before publishing, I recommend running this through AI Visibility's Simulate Changes feature.
-> Paste the draft in and test how it performs against the exact prompts where [Competitor] is
-> currently winning. That will tell us whether the framing is likely to improve citations before it
-> goes live."
-
-If they choose simulation first, pause and provide the exact version to paste.
-If they want to publish now, continue.
+- `metaTitle` — 50–60 characters, keyword-rich, includes the competitor name for comparison pages
+- `metaDescription` — 140–160 characters, answers the core query and includes a CTA
+- `slug` — confirm or suggest a keyword-optimized URL path
 
 ---
 
-### Step 7 — Push draft to CMS
+## Step 6 — Push to CMS
 
-Default to draft state unless user explicitly asks to publish.
+Use what you discovered in Step 0. This is a **new document** (create operation, not update).
 
-- **Sanity**: `create_documents_from_markdown` (ask schema if unknown), save draft
-- **Contentful**: `create_entry` with correct content type, leave unpublished
-- **HubSpot**: `create_blog_post` with `state: DRAFT`
-- **WordPress**: `wp_create_post` with `status: draft`
-- **Ghost**: `create_post` with `status: draft`
-- **Webflow**: `create_cms_item` unpublished
+**Sanity** — use `create_documents_from_markdown` with the full article content. Set `_type` to
+match the blog/landing page schema. Ask the user if unsure: "What's the document type for
+comparison pages in your Sanity schema?" Never use `publish_documents` without explicit instruction.
 
-Then confirm:
+**Contentful** — use `create_entry` with `contentType` matching their blog or landing page type.
+Set `fields.title`, `fields.slug`, `fields.body`. Leave `published: false`.
 
-> "Done — the draft is in [CMS]. Here's the title and draft link: [link]. Review it there before publishing."
+**HubSpot** — use `create_blog_post` with `state: DRAFT`. Include meta description and slug.
 
-If no CMS is connected, output the full Markdown draft with meta fields and complete section structure.
+**WordPress** — use `wp_create_post` with `status: draft`. Map H1 to `title`, body to `content`.
+
+**Ghost** — use `create_post` with `status: draft`. Include `slug`, `title`, `html` or `lexical`,
+and `meta_description`.
+
+**Webflow** — use `create_cms_item` targeting the blog Collection. Map fields to the Collection's
+schema (ask the user for field names if not obvious from context).
+
+After pushing, confirm: *"Done — [page title] is saved as a draft in [CMS]. Here's the ID/URL:
+[link]. Review it there before publishing."*
+
+**Always output a Markdown fallback** of the full content, even when CMS push succeeds, so the
+team has a local copy.
 
 ---
 
-## Why this works
+## What makes competitor content get cited
 
-Competitor hijack content succeeds when the page shape exactly matches the prompt type:
+AI models cite sources that answer comparison questions directly, fairly, and with specifics.
+A few principles that consistently flip citations:
 
-- Direct comparison prompts cite direct comparison pages.
-- Alternatives prompts cite alternatives pages with clear rankings and tradeoffs.
-- Category prompts cite structured category explainers and "best tools" roundups.
-
-Fairness, prompt-language match, and extractable structures (tables, pros/cons, FAQ) increase citation odds.
+- **Answer "which is better" in the first paragraph.** Don't make the reader scroll. If the answer
+  is "it depends on use case," say that — and say which use cases favor each tool.
+- **Be fair about the competitor.** Pages that acknowledge competitor strengths are cited as more
+  trustworthy than pure promotional content. Saying "Mixpanel is excellent for mobile-first teams
+  focused on funnels" signals authority.
+- **The comparison table gets scraped directly.** AI models extract structured data. A well-labeled
+  table of feature differences will be cited verbatim.
+- **Use the competitor's name prominently and accurately.** AI models need to match the query to
+  the page. A page about "Mixpanel vs Amplitude" must use both names naturally and repeatedly.
+- **FAQ blocks mapped to real prompts.** Use the exact question language from AI Visibility. The
+  closer the Q matches the prompt, the more likely the A gets cited.
