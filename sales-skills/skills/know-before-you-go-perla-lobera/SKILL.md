@@ -29,16 +29,76 @@ connect the dots, flag what's missing, and present it in a format that's immedia
 Keep this fast. The user wants to prep for a call, not fill out a form.
 
 **If the user already mentioned the company name** (e.g., "Prep me for Habi"), skip straight
-to the mode popup. If they didn't mention a company, ask conversationally: "Which account
-are you prepping for?"
+to the industry detection step below. If they didn't mention a company, ask conversationally:
+"Which account are you prepping for? Drop the company name and website if you have it."
 
-**Once you have the company name, present ONE popup using `ask_user_input`:**
+### Industry Auto-Detection (run before the popup)
+
+Once you have the company name (and website if provided), **immediately run a quick web search**
+to determine their industry before showing the popup. This takes seconds — do not skip it.
+
+1. Search for: "[Company name]" and "[Company name] what industry" (and "[Company website]" if
+   provided)
+2. Match the result against the **Industry Reference List** below
+3. Select the single best match — the one that most accurately describes their primary business
+4. If no listed industry fits well, identify the closest match and note why (e.g., "Best match:
+   B2B SaaS / Software — they build workflow automation tools for HR teams")
+
+**Industry Reference List:**
+- 🏦 Financial Services / Fintech
+- 🛒 E-commerce / Retail
+- 🏥 Healthcare / Health Tech
+- 🎬 Media & Entertainment
+- 🎮 Gaming
+- ✈️ Travel & Hospitality
+- 🎓 Education / EdTech
+- 💻 B2B SaaS / Software
+- 📱 Consumer Apps / Mobile
+- 📡 Telecommunications
+- 🏠 Real Estate / PropTech
+- 🚚 Logistics / Supply Chain
+- 🍔 Food & Beverage / QSR
+- 🛡️ Insurance
+- 🔗 Marketplace / Platform
+- 🏭 Manufacturing / Industrial
+- 🌐 Other — [most relevant description]
+
+If the detected industry does not cleanly map to any of the above, use **🌐 Other** and append
+a short description of what they actually do (e.g., "🌐 Other — climate tech / carbon accounting
+SaaS"). Never leave the industry field blank.
+
+**Once you have the auto-detected industry, present ONE popup using `ask_user_input`:**
 
 Question 1 (single_select): "What mode do you need?"
   - 🔧 SE Mode — demo prep, pain-to-product mapping, story arcs
   - 💼 AE Mode — conversation prep, discovery questions, gold nuggets
 
-That's it for the popup. After they select the mode, ask **one quick conversational question:**
+Question 2 (single_select): "Industry — I detected **[auto-detected industry]**. Does that
+look right, or would you like to change it?"
+  - ✅ Yes, that's correct — [auto-detected industry]
+  - 🏦 Financial Services / Fintech
+  - 🛒 E-commerce / Retail
+  - 🏥 Healthcare / Health Tech
+  - 🎬 Media & Entertainment
+  - 🎮 Gaming
+  - ✈️ Travel & Hospitality
+  - 🎓 Education / EdTech
+  - 💻 B2B SaaS / Software
+  - 📱 Consumer Apps / Mobile
+  - 📡 Telecommunications
+  - 🏠 Real Estate / PropTech
+  - 🚚 Logistics / Supply Chain
+  - 🍔 Food & Beverage / QSR
+  - 🛡️ Insurance
+  - 🔗 Marketplace / Platform
+  - 🏭 Manufacturing / Industrial
+  - 🌐 Other — I'll specify in chat
+
+If the user selects "🌐 Other — I'll specify in chat", ask them in one conversational line:
+"What industry should I use?" then continue. Use whatever they say as the industry for the
+remainder of the brief.
+
+After the popup, ask **one quick conversational question:**
 
 "Do you have any Granola links from teammate calls you weren't on? Paste them here and I'll
 pull those notes in too. Otherwise, just say 'go' and I'll start with what I can find."
@@ -178,8 +238,9 @@ Before generating the role-specific output, organize everything into a unified p
 important from Step 2 should be lost in this synthesis — if a data source surfaced it, it belongs
 somewhere in this profile.
 
-- **Company Overview:** What they do (from web search summary), industry, size, funding stage,
-  tech stack, business model, target customers
+- **Company Overview:** What they do (from web search summary), industry (use the confirmed
+  industry from Step 1 — do not re-infer it), size, funding stage, tech stack, business model,
+  target customers
 - **Deal Context:** Stage, timeline, deal size, decision makers, procurement process, next steps
 - **People Map:** Every person mentioned across all sources — their role, what they care about,
   what they've said in calls, their LinkedIn context, persona label
@@ -385,7 +446,7 @@ internal intelligence brief — professional but not sterile.
 ### Visual Design Requirements:
 - **Dark hero header:** Use a dark gradient background (slate/navy) with white text. Include:
   - Company name in italic serif font (large)
-  - Metadata row: industry, opportunity size/stage, date
+  - Metadata row: industry (confirmed in Step 1), opportunity size/stage, date
   - Mode badge (SE/AE) in top-right corner with subtle border
   - Key stakeholder pills at the bottom of the header (name, role, 1-line summary of what
     they care about) — show only the 2-3 most important people
