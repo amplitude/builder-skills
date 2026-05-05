@@ -1,47 +1,75 @@
 ---
 name: craft-experiment-design
-description: Write a hypothesis, define success metrics, and plan a holdout strategy. Use when designing A/B tests or experiment plans.
-suggest_when: User wants to test something, says "A/B test", "experiment", "should we test this", "hypothesis", or is planning a holdout strategy for a feature launch.
+description: "Design a complete A/B test plan with falsifiable hypothesis, primary/secondary/guardrail metrics, audience allocation, holdout strategy, and duration estimate. Use when planning an experiment, split test, or feature rollout that needs statistical rigor."
 ---
 
 # Experiment Design
 
-**Write a hypothesis, define success metrics, and plan a holdout strategy.**
+**Design a complete A/B test plan from a proposed change.**
 
-You want to run an A/B test but need to get the plan straight first. This skill helps you go from "we should test this" to a well-structured experiment design that your team and data scientists can review.
+Takes a feature change or product hypothesis and produces a structured experiment plan ready for data science and engineering review.
 
 ---
 
 ## Prompt Template
 
 ```
-You are an experienced product manager and experimentation specialist.
-
-Here is what I want to test:
+Design an experiment plan for the proposed change below.
 
 <context>
 $ARGUMENTS
 </context>
 
-> If the above is blank, ask the user: "{{DESCRIBE THE CHANGE YOU WANT TO TEST AND WHY}}"
+> If the above is blank, ask the user: "{{DESCRIBE THE CHANGE YOU WANT TO TEST, YOUR CURRENT BASELINE METRICS (conversion rate, traffic volume, etc.), AND WHAT YOU EXPECT TO HAPPEN}}"
 
-Help me design an experiment plan that includes:
+Work through these steps in order:
 
-1. **Hypothesis** — A clear, falsifiable statement in the format: "If we [change], then [outcome], because [rationale]."
-2. **Primary Metric** — The single metric that determines success or failure.
-3. **Secondary Metrics** — 2-3 supporting metrics to watch for unintended effects.
-4. **Guardrail Metrics** — Metrics that must not degrade (e.g., error rates, latency, retention).
-5. **Audience & Allocation** — Who should be in the test? What percentage split do you recommend?
-6. **Holdout Strategy** — Should we maintain a holdout group after the test? Why or why not?
-7. **Duration Estimate** — How long should we run the test and what assumptions drive that?
-8. **Risks & Considerations** — What could go wrong or bias the results?
+### 1. Hypothesis
 
-Be specific. Use real metric names where possible. Call out any assumptions I should validate with data or eng.
+Write a falsifiable statement: "If we [specific change], then [measurable outcome] will [increase/decrease] by [estimated magnitude], because [rationale grounded in user behavior or data]."
+
+Push back if the hypothesis isn't falsifiable or the rationale is hand-wavy. A hypothesis without a mechanism is a guess.
+
+### 2. Metrics
+
+- **Primary metric:** The single metric that determines success or failure. Must be directly measurable and causally linked to the change.
+- **Secondary metrics (2-3):** Supporting signals that help explain WHY the primary metric moved. Include at least one engagement metric and one downstream conversion metric.
+- **Guardrail metrics (2-3):** Metrics that must not degrade. Include error rate, latency, and a retention or satisfaction signal relevant to the product area.
+
+Use real metric names from the user's domain, not generic placeholders.
+
+### 3. Audience and Allocation
+
+- Define the target population (who should be in the test, who should be excluded)
+- Recommend percentage split with rationale
+- Flag any audience segments that could confound results (power users, new users, specific geos)
+
+### 4. Duration and Sample Size
+
+- Estimate minimum detectable effect (MDE) the user cares about
+- Calculate approximate duration given stated traffic volume (or ask for it)
+- Flag risks: novelty effects, day-of-week bias, seasonal patterns
+- State assumptions explicitly so the user can validate with their data team
+
+### 5. Holdout Strategy
+
+Recommend whether to maintain a holdout group post-test. Be specific:
+- If yes: what percentage, for how long, and what you'll measure
+- If no: why the test results are sufficient
+
+### 6. Risks and Failure Modes
+
+- What could bias the results? (instrumentation bugs, selection bias, metric gaming)
+- What's the "test is inconclusive" scenario and how do you avoid it?
+- What's the minimum bar for shipping vs. iterating?
+
+> **Checkpoint:** After drafting the plan, review it against these questions: Is the hypothesis falsifiable? Can the primary metric actually be measured? Is the duration realistic given traffic? If any answer is no, revise before presenting.
 ```
 
 ---
 
 ## Tips
 
-- Include any prior data or context you have — conversion rates, traffic volume, previous test results. It helps with duration and allocation recommendations.
-- If you're unsure about your guardrail metrics, ask the skill to suggest some based on your product area.
+- Always include baseline metrics (current conversion rate, traffic volume, prior test results) in the input. Without them, duration estimates are guesses.
+- If guardrail metrics aren't obvious, ask about the product area and suggest appropriate ones.
+- Pair with **craft-experiment-readout** after the test completes to analyze results.
