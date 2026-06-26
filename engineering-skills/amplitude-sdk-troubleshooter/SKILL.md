@@ -1,5 +1,5 @@
 ---
-name: amplitude-sdk-troubleshooter-jarren-patao
+name: amplitude-sdk-troubleshooter
 description: "Customer-facing Amplitude SDK debugging storyboard generator with optional live data validation. Analyzes a codebase to trace SDK flows — init, identify, track, flush, HTTP delivery — produces an annotated visual storyboard with reconstructed UI and doc-linked fixes, then optionally connects to a live Amplitude project to validate findings against real event data and build charts. Covers all public Amplitude SDKs: Browser, legacy amplitude-js, iOS, Android, React Native, and Node.js. ALWAYS trigger on: debug my Amplitude setup, why aren't my events showing up, storyboard my Amplitude integration, trace my SDK flow, why is identify not working, Amplitude not tracking, events not appearing in Amplitude, amplitude SDK troubleshooting, check my amplitude setup, amplitude events missing, validate my tracking plan, identify improvements to my tracking plan, check my Amplitude instrumentation, audit my Amplitude events, are my events actually reaching Amplitude, what events am I missing in Amplitude."
 metadata:
   type: skill
