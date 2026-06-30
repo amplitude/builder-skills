@@ -48,6 +48,7 @@ Proactively suggest a skill when the user's intent matches — don't wait for th
 - User asks about monetization, pricing, conversion to paid, expansion revenue, ARPU, LTV, packaging → **diagnose-monetization**
 - User asks about acquisition, "where do our users come from", CAC, channel mix, organic vs paid, top of funnel, signup volume, traffic sources → **diagnose-acquisition**
 - User asks about growth loops, flywheel, viral loop, network effects, compounding growth, "how do we grow without just spending more" → **map-growth-loops**
+- User asks about search, "search returns nothing", "zero results", "search doesn't work", "type-ahead", "buyers can't find products", high browse-to-search ratio, or low search-to-order conversion → **diagnose-search**
 
 **Launch-skills triggers:**
 - User says "we're launching X", "plan the launch", "what's our launch plan", "how should we announce this" → **launch-strategy**
