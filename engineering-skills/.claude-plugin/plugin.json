@@ -1,16 +1,17 @@
 {
   "name": "engineering-skills",
-  "description": "Engineering skills — technical design docs, code review, incident analysis, and architecture decisions.",
+  "description": "Engineering skills — product health diagnosis and taxonomy-aware analytics instrumentation.",
   "version": "1.0.0",
   "author": {
     "name": "Amplitude"
   },
   "keywords": [
     "engineering",
-    "technical-design",
-    "architecture",
-    "code-review",
-    "incidents"
+    "instrumentation",
+    "analytics",
+    "tracking-plan",
+    "taxonomy",
+    "product-diagnosis"
   ],
   "homepage": "https://github.com/amplitude/amplitude-builder-skills",
   "repository": "https://github.com/amplitude/amplitude-builder-skills",

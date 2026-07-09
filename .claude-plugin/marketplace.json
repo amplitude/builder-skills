@@ -36,7 +36,7 @@
     {
       "name": "engineering-skills",
       "source": "./engineering-skills",
-      "description": "Build & ship — technical diagnosis and product health analysis"
+      "description": "Build & ship — product health diagnosis and taxonomy-aware PR instrumentation"
     },
     {
       "name": "design-skills",
