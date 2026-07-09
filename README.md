@@ -80,7 +80,12 @@ User research, journey mapping, usability analysis, and design critique. *Coming
 
 ### [engineering-skills](engineering-skills/) — Build & ship
 
-Technical design docs, code review, incident analysis, and architecture decisions. *Coming soon.*
+Product health diagnosis and taxonomy-aware analytics instrumentation.
+
+| Type | Name | What it does |
+|------|------|-------------|
+| Skill | [product-diagnosis](engineering-skills/skills/product-diagnosis/SKILL.md) | Diagnose product health across Amplitude, Datadog, and Slack — root causes, not just symptoms |
+| Skill | [instrument-pr](engineering-skills/skills/instrument-pr/SKILL.md) | Instrument a PR with Amplitude events that conform to your existing taxonomy |
 
 ### [launch-skills](launch-skills/) — Launch & announce
 
