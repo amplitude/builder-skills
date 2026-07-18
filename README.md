@@ -50,6 +50,7 @@ Dashboards, charts, experiments, feedback, and account health — powered by the
 | Skill | [analyze-dashboard](analytics-skills/skills/analyze-dashboard/SKILL.md) | Analyze dashboards: surface concerns, identify anomalies, explain changes |
 | Skill | [analyze-experiment](analytics-skills/skills/analyze-experiment/SKILL.md) | Design, analyze, and interpret A/B tests with statistical rigor |
 | Skill | [analyze-feedback](analytics-skills/skills/analyze-feedback/SKILL.md) | Synthesize customer feedback into themes and prioritized recommendations |
+| Skill | [analyze-mcp-server](analytics-skills/skills/analyze-mcp-server/SKILL.md) | Analyze MCP server instrumented with Amplitude's MCP Analytics SDK: usage, tool call intent from rationales, errors and prioritized fixes |
 | Skill | [create-chart](analytics-skills/skills/create-chart/SKILL.md) | Create Amplitude charts from natural language |
 | Skill | [create-dashboard](analytics-skills/skills/create-dashboard/SKILL.md) | Build dashboards from requirements or goals |
 | Skill | [monitor-experiments](analytics-skills/skills/monitor-experiments/SKILL.md) | Monitor all experiments, triage by importance, deep-analyze top ones |
