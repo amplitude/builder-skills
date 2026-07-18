@@ -15,7 +15,8 @@
     "feedback",
     "account-health",
     "a-b-testing",
-    "opportunities"
+    "opportunities",
+    "mcp"
   ],
   "homepage": "https://github.com/amplitude/amplitude-builder-skills",
   "repository": "https://github.com/amplitude/amplitude-builder-skills",

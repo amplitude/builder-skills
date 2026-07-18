@@ -13,6 +13,7 @@ Use AI to analyze dashboards, charts, experiments, feedback, and account health 
 | [analyze-dashboard](skills/analyze-dashboard/SKILL.md) | Analyze dashboards end-to-end: surface concerns, identify anomalies, explain changes |
 | [analyze-experiment](skills/analyze-experiment/SKILL.md) | Design, analyze, and interpret A/B tests with statistical rigor |
 | [analyze-feedback](skills/analyze-feedback/SKILL.md) | Synthesize customer feedback into actionable themes and prioritized recommendations |
+| [analyze-mcp-server](skills/analyze-mcp-server/SKILL.md) | Analyze an MCP server instrumented with Amplitude's MCP Analytics SDK — break down usage and errors by tool, read intent from rationales, prioritize fixes |
 | [create-chart](skills/create-chart/SKILL.md) | Create Amplitude charts from natural language descriptions |
 | [create-dashboard](skills/create-dashboard/SKILL.md) | Build comprehensive dashboards from requirements or goals |
 | [monitor-experiments](skills/monitor-experiments/SKILL.md) | Monitor all active and recently completed experiments, triage by importance |
