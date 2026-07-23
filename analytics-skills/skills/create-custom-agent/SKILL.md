@@ -1,6 +1,6 @@
 ---
 name: create-custom-agent
-description: Guide an Amplitude user through building a custom agent: suggest use cases grounded in their role and data, shape the idea into a well-formed spec, and generate a ready-to-run Global Agent deeplink that creates it. Use to create, build, or set up a custom agent, automate a recurring analysis, or put a repeated report on a schedule.
+description: Guide an Amplitude user through building a custom agent by suggesting use cases grounded in their role and data, shaping the idea into a well-formed spec, and generating a ready-to-run Global Agent deeplink that creates it. Use to create, build, or set up a custom agent, automate a recurring analysis, or put a repeated report on a schedule.
 suggest_when: User says "create a custom agent", "build an agent", "automate this analysis", "put this report on a schedule", or describes a recurring workflow they run by hand and want to hand off to an agent.
 ---
 
