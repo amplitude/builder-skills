@@ -71,7 +71,7 @@ Create a custom agent for me with these details:
 Take the filled block, URL-encode it, and drop it into the route from the SKILL. Example, abbreviated:
 
 ```
-https://app.amplitude.com/signup?source=custom-agent-builder&aiQuery=Create%20a%20custom%20agent%20for%20me%20with%20these%20details%3A%0A%0A-%20Project%3A%20current%20project%0A...
+https://app.amplitude.com/?aiQuery=Create%20a%20custom%20agent%20for%20me%20with%20these%20details%3A%0A%0A-%20Project%3A%20current%20project%0A...
 ```
 
 Present it as a named markdown link, never as the raw encoded string.

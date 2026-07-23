@@ -1,6 +1,6 @@
 ---
 name: create-custom-agent
-description: Guide an Amplitude user through building a custom agent: suggest use cases grounded in their role and data, shape the idea into a well-formed spec, and generate a ready-to-run Global Agent deeplink that creates it. Use to create, build, or set up a custom agent, automate a recurring analysis, or put a repeated report on a schedule.
+description: Guide an Amplitude user through building a custom agent by suggesting use cases grounded in their role and data, shaping the idea into a well-formed spec, and generating a ready-to-run Global Agent deeplink that creates it. Use to create, build, or set up a custom agent, automate a recurring analysis, or put a repeated report on a schedule.
 suggest_when: User says "create a custom agent", "build an agent", "automate this analysis", "put this report on a schedule", or describes a recurring workflow they run by hand and want to hand off to an agent.
 ---
 
@@ -41,7 +41,7 @@ If Amplitude MCP tools are connected in this environment, use them to ground sug
 When you can't reach their data directly, Global Agent can, because it runs inside their Amplitude org. Offer a deeplink that asks Global Agent to suggest custom agent use cases from their own data:
 
 ```
-https://app.amplitude.com/signup?source=custom-agent-builder&aiQuery=<URL-encoded brainstorm prompt>
+https://app.amplitude.com/?aiQuery=<URL-encoded brainstorm prompt>
 ```
 
 A good brainstorm prompt: "Look at my most active events and dashboards and suggest three custom agents I could build to automate recurring analysis. For each, name the signal to watch, a guardrail signal, a flag threshold, a cadence, and where to deliver results." Encode it the same way as Step 5.
@@ -88,10 +88,10 @@ For any field they didn't answer, fill a sensible default and flag it in your me
 
 Turn the filled prompt into a Global Agent link so opening it loads the prompt ready to run.
 
-Route (works for both new and existing Amplitude users):
+Route (the app root resolves the user's org on its own, so no org slug is needed; a logged-in user lands in Global Agent with the prompt already loaded in the composer):
 
 ```
-https://app.amplitude.com/signup?source=custom-agent-builder&aiQuery=<URL-encoded prompt>
+https://app.amplitude.com/?aiQuery=<URL-encoded prompt>
 ```
 
 URL-encode the whole filled prompt. Encode spaces as `%20`, newlines as `%0A`, quotes as `%22`, parentheses as `%28` and `%29`, `#` as `%23`, `/` as `%2F`, and `:` as `%3A`.
@@ -100,7 +100,7 @@ URL-encode the whole filled prompt. Encode spaces as `%20`, newlines as `%0A`, q
 
 Return three things:
 
-1. **The clickable link**, as a named markdown link whose text is a short plain-English description (for example, `[Build this agent in Amplitude](https://app.amplitude.com/signup?source=custom-agent-builder&aiQuery=...)`). Never paste the raw encoded URL as the visible text.
+1. **The clickable link**, as a named markdown link whose text is a short plain-English description (for example, `[Build this agent in Amplitude](https://app.amplitude.com/?aiQuery=...)`). Never paste the raw encoded URL as the visible text.
 2. **The plain-text prompt** from Step 5, so they can paste it into Global Agent or the `/create-custom-agent` command by hand.
 3. **A one-line "what happens next"**: they open the link, review the draft agent Global Agent proposes, then publish it. Add these reminders only when they apply:
    - If the destination is Slack, invite the `Amplitude` Slackbot to the target channel first, or delivery silently fails.
