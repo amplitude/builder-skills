@@ -17,6 +17,7 @@ Use AI to analyze dashboards, charts, experiments, feedback, and account health 
 | [create-chart](skills/create-chart/SKILL.md) | Create Amplitude charts from natural language descriptions |
 | [create-dashboard](skills/create-dashboard/SKILL.md) | Build comprehensive dashboards from requirements or goals |
 | [monitor-experiments](skills/monitor-experiments/SKILL.md) | Monitor all active and recently completed experiments, triage by importance |
+| [create-custom-agent](skills/create-custom-agent/SKILL.md) | Suggest custom-agent use cases and generate a Global Agent deeplink that builds a scheduled agent |
 
 ## Commands
 

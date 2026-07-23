@@ -56,6 +56,7 @@ Dashboards, charts, experiments, feedback, and account health — powered by the
 | Skill | [monitor-experiments](analytics-skills/skills/monitor-experiments/SKILL.md) | Monitor all experiments, triage by importance, deep-analyze top ones |
 | Skill | [churn-lost-deal-analysis](analytics-skills/skills/churn-lost-deal-analysis/SKILL.md) | Read CRM loss data, cluster by theme, and surface product gaps with ARR-weighted recommendations |
 | Skill | [support-feedback-prioritization](analytics-skills/skills/support-feedback-prioritization/SKILL.md) | Pull Intercom + Slack signals, enrich with CRM data, and rank by customer value into a tiered report |
+| Skill | [create-custom-agent](analytics-skills/skills/create-custom-agent/SKILL.md) | Suggest custom-agent use cases and generate a Global Agent deeplink that builds a scheduled agent |
 | Command | [daily-standup](analytics-skills/commands/daily-standup.md) | Daily brief + experiment check + feedback scan in one workflow |
 | Command | [weekly-review](analytics-skills/commands/weekly-review.md) | Weekly brief + opportunities + experiment readouts in one workflow |
 
