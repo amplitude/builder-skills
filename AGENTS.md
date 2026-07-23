@@ -35,6 +35,7 @@ Proactively suggest a skill when the user's intent matches — don't wait for th
 - User says "create a chart", "show me" a metric → **create-chart**
 - User says "build a dashboard" → **create-dashboard**
 - User asks to check experiments, "what's running" → **monitor-experiments**
+- User says "create a custom agent", "build an agent", "automate this analysis", or "put a report on a schedule" → **create-custom-agent**
 
 **Execution-skills triggers:**
 - User shares a meeting transcript or notes, says "summarize this meeting", "action items" → **meeting-synthesis**
