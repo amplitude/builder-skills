@@ -1,65 +1,84 @@
 ---
 name: jobs-to-be-done
-description: Uncover the functional, social, and emotional jobs driving customer behavior. Use when you need to understand why customers hire, switch, or abandon products — not just what they say they want.
-suggest_when: User asks about customer motivation, "why do they churn", "what do they really want", "what job does this solve", switching behavior, or needs deeper understanding of customer needs beyond feature requests.
+description: "Analyze customer research, interview notes, or feature requests to uncover functional, social, and emotional jobs driving behavior, then prioritize by intensity, frequency, and underservedness. Use when investigating churn, switching behavior, JTBD analysis, customer motivation, or unmet needs."
 ---
 
 # Jobs to Be Done
 
-**Uncover the functional, social, and emotional jobs driving customer behavior.**
+**Uncover the jobs driving customer behavior -- not just what they say they want.**
 
-Customers don't buy products — they hire them to make progress in their lives. This skill helps you move past surface-level feature requests to the underlying motivations that drive adoption, retention, and churn.
+Analyzes customer research, interviews, churn data, or feature requests through the JTBD lens to surface the functional, social, and emotional jobs that drive adoption, retention, and churn. Separates evidence from inference and flags where more research is needed.
 
 ---
 
 ## Prompt Template
 
 ```
-You are an experienced product strategist applying the Jobs to Be Done framework.
-
-Here is the context about the product, customer segment, or problem space:
+Analyze the following through the Jobs to Be Done framework.
 
 <context>
 $ARGUMENTS
 </context>
 
-> If the above is blank, ask the user: "{{PASTE YOUR CUSTOMER RESEARCH, INTERVIEW NOTES, CHURN DATA, FEATURE REQUESTS, OR PRODUCT DESCRIPTION HERE}}"
+> If the above is blank, ask the user: "{{PASTE YOUR CUSTOMER RESEARCH, INTERVIEW NOTES, CHURN DATA, FEATURE REQUESTS, OR PRODUCT DESCRIPTION}}"
 
-Analyze this through the JTBD lens and produce:
+Work through these steps:
 
-1. **Functional Jobs** — The core tasks customers are trying to accomplish. What are they trying to get done? What does the workflow look like today? Measure by: time savings, effort reduction, accuracy, throughput.
+### 1. Extract Jobs
 
-2. **Social Jobs** — How customers want to be perceived by others. What professional identity or status are they trying to project? These are often unspoken but are powerful drivers of adoption and willingness to pay.
+For each job identified, classify it and provide evidence:
 
-3. **Emotional Jobs** — Feelings customers want to achieve or avoid. What anxieties does the current approach create? What confidence or relief would the ideal solution provide? Often the strongest loyalty driver but least articulated.
+**Functional Jobs** -- Tasks customers are trying to accomplish.
+- What is the specific workflow today?
+- Measure by: time savings, effort reduction, accuracy, throughput
 
-4. **Current Pains** — For each job, identify:
-   - Obstacles preventing completion
-   - Time, money, or effort wasted
-   - Mistakes the current approach causes
-   - Gaps in existing solutions
+**Social Jobs** -- How customers want to be perceived.
+- What professional identity or status are they projecting?
+- These are often unspoken but drive adoption and willingness to pay
 
-5. **Desired Gains** — For each job, identify:
-   - What would exceed expectations
-   - Quantifiable efficiency improvements
-   - New capabilities that would unlock
-   - Quality-of-life improvements
+**Emotional Jobs** -- Feelings customers want to achieve or avoid.
+- What anxieties does the current approach create?
+- Often the strongest loyalty driver but least articulated
 
-6. **Job Prioritization** — Rank jobs by:
-   - Intensity (how strongly felt?)
-   - Frequency (how often does this come up?)
-   - Underserved (how poorly do current solutions address it?)
+For each job: cite the specific evidence from the input (direct quotes where available) or explicitly mark it as an inference with your confidence level (high/medium/low).
 
-7. **Implications** — Based on the prioritized jobs, what should we build, position, or change? What jobs should we ignore?
+### 2. Map Pains and Gains
 
-Separate what customers said from what you're inferring. Use direct quotes where available. Flag where more research is needed.
+For each prioritized job:
+
+| Dimension | Current Pains | Desired Gains |
+|-----------|--------------|---------------|
+| Obstacles | What prevents completion? | What would exceed expectations? |
+| Waste | Time, money, effort lost? | Quantifiable efficiency improvement? |
+| Errors | What mistakes does the current approach cause? | New capabilities unlocked? |
+| Gaps | Where do existing solutions fall short? | Quality-of-life improvements? |
+
+### 3. Prioritize
+
+Rank jobs using this matrix:
+
+| Job | Intensity (1-5) | Frequency (1-5) | Underserved (1-5) | Priority Score | Evidence Basis |
+|-----|-----------------|-----------------|-------------------|----------------|----------------|
+| ... | How strongly felt? | How often? | How poorly served today? | Sum | Quote/data or inference? |
+
+Flag any job ranked highly on inference alone -- these need validation.
+
+### 4. Implications
+
+Based on the prioritized jobs:
+- **Build:** What should we build or change to address the top jobs?
+- **Position:** How should we message or position the product against these jobs?
+- **Ignore:** Which jobs should we explicitly NOT pursue, and why?
+- **Validate:** Where is the evidence thin? What specific research would fill the gaps?
+
+> **Checkpoint:** Before presenting implications, verify that each recommendation traces back to a specific prioritized job with supporting evidence. Recommendations without evidence chains get flagged.
 ```
 
 ---
 
 ## Tips
 
-- The classic test: "Customers don't want a quarter-inch drill — they want a quarter-inch hole." Keep pushing past the feature request to the underlying job.
-- Social and emotional jobs are where the real differentiation lives. Functional jobs get commoditized; emotional jobs create loyalty.
-- Pair this with **craft-discovery-synthesis** when you have raw interview transcripts to process first.
-- If you only have feature requests (not research), this skill will surface the assumptions you're making — which tells you what to go validate.
+- The classic test: customers don't want a quarter-inch drill -- they want a quarter-inch hole. Keep pushing past the feature request to the underlying job.
+- Social and emotional jobs are where real differentiation lives. Functional jobs get commoditized.
+- Pair with **craft-discovery-synthesis** when you have raw interview transcripts to process first.
+- If you only have feature requests (not research), this skill surfaces the assumptions you're making -- which tells you what to validate.
